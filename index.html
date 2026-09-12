@@ -1,525 +1,1007 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>WASH AURA | Premium Doorstep Car Care</title>
-
-<meta name="description" content="WASH AURA - Premium Doorstep Car Care. Professional car wash, detailing, polishing, interior cleaning and paint protection at your doorstep.">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#03070d;
-  color:#fff;
-  line-height:1.6;
-}
-
-:root{
-  --blue:#168cff;
-  --blue2:#55b7ff;
-  --dark:#03070d;
-  --card:rgba(12,22,35,.75);
-  --gold:#d7b56d;
-  --muted:#9aa8b8;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-.container{
-  width:92%;
-  max-width:1180px;
-  margin:auto;
-}
-
-/* NAVBAR */
-
-nav{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
-  background:rgba(2,7,13,.82);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.nav-inner{
-  min-height:76px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:15px;
-}
-
-.logo{
-  font-size:24px;
-  font-weight:900;
-  letter-spacing:3px;
-}
-
-.logo span{
-  color:var(--blue2);
-}
-
-.tagline{
-  font-size:9px;
-  color:#8fa1b4;
-  letter-spacing:2px;
-  margin-top:-4px;
-}
-
-.nav-links{
-  display:flex;
-  gap:25px;
-  align-items:center;
-}
-
-.nav-links a{
-  color:#dce8f5;
-  font-size:14px;
-}
-
-.nav-links a:hover{
-  color:var(--blue2);
-}
-
-.nav-btn{
-  padding:11px 18px;
-  border-radius:30px;
-  background:linear-gradient(135deg,#0878ed,#45b7ff);
-  color:#fff !important;
-  font-weight:700;
-}
-
-/* HERO */
-
-.hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  position:relative;
-  overflow:hidden;
-  padding-top:100px;
-  background:
-    radial-gradient(circle at 75% 45%,rgba(0,128,255,.23),transparent 30%),
-    radial-gradient(circle at 20% 70%,rgba(0,70,160,.16),transparent 28%),
-    #03070d;
-}
-
-.hero:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    90deg,
-    rgba(3,7,13,.98) 0%,
-    rgba(3,7,13,.78) 43%,
-    rgba(3,7,13,.25) 100%
-  );
-  pointer-events:none;
-}
-
-.hero-content{
-  position:relative;
-  z-index:5;
-  max-width:650px;
-}
-
-.badge{
-  display:inline-block;
-  padding:8px 15px;
-  border:1px solid rgba(70,170,255,.35);
-  background:rgba(20,100,180,.12);
-  border-radius:30px;
-  color:#83caff;
-  font-size:11px;
-  letter-spacing:2px;
-  margin-bottom:20px;
-}
-
-.hero h1{
-  font-size:clamp(45px,7vw,82px);
-  line-height:.98;
-  letter-spacing:-3px;
-  margin-bottom:24px;
-}
-
-.hero h1 span{
-  color:var(--blue2);
-  text-shadow:0 0 35px rgba(50,170,255,.3);
-}
-
-.hero p{
-  color:#b4c2d1;
-  max-width:570px;
-  font-size:17px;
-  margin-bottom:30px;
-}
-
-.hero-buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:13px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:14px 23px;
-  border-radius:9px;
-  font-weight:800;
-  transition:.3s;
-}
-
-.btn-primary{
-  background:linear-gradient(135deg,#0878ed,#4bbaff);
-  box-shadow:0 12px 35px rgba(10,130,255,.25);
-}
-
-.btn-primary:hover{
-  transform:translateY(-3px);
-}
-
-.btn-outline{
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.04);
-}
-
-.btn-outline:hover{
-  border-color:var(--blue2);
-}
-
-/* CAR VISUAL */
-
-.hero-car{
-  position:absolute;
-  right:-5%;
-  bottom:2%;
-  width:min(62vw,850px);
-  opacity:.92;
-  z-index:2;
-  filter:
-    drop-shadow(0 30px 40px rgba(0,0,0,.8))
-    drop-shadow(0 0 45px rgba(0,120,255,.15));
-}
-
-/* RAIN */
-
-.water{
-  position:absolute;
-  width:100%;
-  height:100%;
-  inset:0;
-  z-index:3;
-  pointer-events:none;
-  opacity:.18;
-  background-image:
-    radial-gradient(circle,rgba(255,255,255,.8) 1px,transparent 2px);
-  background-size:45px 45px;
-  animation:rain 8s linear infinite;
-}
-
-@keyframes rain{
-  from{transform:translateY(-50px)}
-  to{transform:translateY(50px)}
-}
-
-/* STATS */
-
-.stats{
-  position:relative;
-  z-index:10;
-  margin-top:-50px;
-}
-
-.stats-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
-}
-
-.stat{
-  padding:22px;
-  text-align:center;
-  background:rgba(9,18,30,.86);
-  border:1px solid rgba(255,255,255,.08);
-  backdrop-filter:blur(12px);
-}
-
-.stat strong{
-  display:block;
-  font-size:26px;
-}
-
-.stat span{
-  color:var(--muted);
-  font-size:12px;
-}
-
-/* SECTIONS */
-
-section{
-  padding:100px 0;
-}
-
-.section-head{
-  text-align:center;
-  max-width:700px;
-  margin:0 auto 50px;
-}
-
-.eyebrow{
-  color:var(--blue2);
-  letter-spacing:3px;
-  font-size:12px;
-  font-weight:800;
-  margin-bottom:12px;
-}
-
-.section-head h2{
-  font-size:clamp(32px,5vw,52px);
-  line-height:1.1;
-  margin-bottom:15px;
-}
-
-.section-head p{
-  color:var(--muted);
-}
-
-/* SERVICES */
-
-.services{
-  background:
-    linear-gradient(rgba(3,7,13,.94),rgba(3,7,13,.97)),
-    radial-gradient(circle at 50% 0%,#075ca0,transparent 50%);
-}
-
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.card{
-  background:linear-gradient(
-    145deg,
-    rgba(16,30,46,.8),
-    rgba(5,12,21,.8)
-  );
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:16px;
-  padding:30px;
-  transition:.35s;
-  backdrop-filter:blur(15px);
-}
-
-.card:hover{
-  transform:translateY(-8px);
-  border-color:rgba(65,174,255,.5);
-  box-shadow:0 20px 60px rgba(0,90,180,.14);
-}
-
-.icon{
-  width:56px;
-  height:56px;
-  display:grid;
-  place-items:center;
-  border-radius:14px;
-  background:rgba(21,137,255,.12);
-  border:1px solid rgba(60,170,255,.2);
-  font-size:27px;
-  margin-bottom:20px;
-}
-
-.card h3{
-  margin-bottom:10px;
-  font-size:20px;
-}
-
-.card p{
-  color:var(--muted);
-  font-size:14px;
-}
-
-/* PROCESS */
-
-.process-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-}
-
-.step{
-  text-align:center;
-  padding:25px 15px;
-}
-
-.number{
-  width:52px;
-  height:52px;
-  margin:0 auto 18px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:linear-gradient(135deg,#0878ed,#43b8ff);
-  font-weight:900;
-}
-
-.step p{
-  color:var(--muted);
-  font-size:14px;
-  margin-top:7px;
-}
-
-/* PACKAGES */
-
-.packages{
-  background:#050b13;
-}
-
-.price-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.price-card{
-  position:relative;
-  overflow:hidden;
-}
-
-.price-card.featured{
-  border-color:rgba(55,174,255,.65);
-  box-shadow:0 0 50px rgba(0,120,255,.13);
-}
-
-.popular{
-  position:absolute;
-  top:16px;
-  right:16px;
-  background:var(--gold);
-  color:#111;
-  padding:5px 10px;
-  border-radius:20px;
-  font-size:10px;
-  font-weight:900;
-}
-
-.price{
-  font-size:42px;
-  font-weight:900;
-  margin:15px 0;
-}
-
-.price small{
-  font-size:13px;
-  color:var(--muted);
-  font-weight:400;
-}
-
-.features{
-  list-style:none;
-  margin:25px 0;
-}
-
-.features li{
-  padding:9px 0;
-  color:#b8c7d7;
-  font-size:14px;
-  border-bottom:1px solid rgba(255,255,255,.05);
-}
-
-.features li:before{
-  content:"✓";
-  color:#51baff;
-  margin-right:9px;
-}
-
-/* GALLERY */
-
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-}
-
-.gallery-item{
-  min-height:230px;
-  border-radius:15px;
-  overflow:hidden;
-  position:relative;
-  background:
-    radial-gradient(circle at 30% 30%,rgba(60,170,255,.25),transparent 25%),
-    linear-gradient(135deg,#06101d,#0d2945);
-  border:1px solid rgba(255,255,255,.08);
-}
-
-.gallery-item:after{
-  content:"WASH AURA • DETAILING";
-  position:absolute;
-  bottom:15px;
-  left:18px;
-  color:#fff;
-  font-size:11px;
-  letter-spacing:2px;
-  font-weight:900;
-  opacity:.75;
-}
-
-/* WHY */
-
-.why{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-  align-items:center;
-}
-
-.why h2{
-  font-size:clamp(32px,5vw,48px);
-  line-height:1.1;
-  margin-bottom:18px;
-}
-
-.why-text{
-  color:#91a0b0;
-}
-
-.check{
-  display:flex;
-  gap:14px;
-  margin:18px 0;
-  color:#c5d1dd;
-}
-
-.check b{
-  color:#5ebeff;
-}
-
-.why-box{
-  padding:40px;
-  border-radius:20px;
-  background:
-    radial-gradient(circle at 80% 20%,rgba(0,128,255,.2),transparent 35%),
-    linear-gradient(145deg,#0b1725,#040a11);
-  border:1px solid rgba(255,255,255,.08);
-}
-
-.
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WASH AURA – Premium Doorstep Car Care</title>
+
+  <meta name="description"
+        content="WASH AURA – Premium Doorstep Car Care. Professional car wash, detailing, polishing and interior cleaning at your doorstep.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #03070d;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(3, 7, 13, 0.96);
+      border-bottom: 1px solid rgba(80, 170, 255, 0.18);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      color: #ffffff;
+    }
+
+    .logo span {
+      color: #2da5ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      color: #dbe9f7;
+    }
+
+    .nav-links a:hover {
+      color: #48b1ff;
+    }
+
+    .nav-call {
+      background: #168cff;
+      padding: 10px 17px;
+      border-radius: 30px;
+      color: white !important;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(22, 140, 255, 0.25), transparent 32%),
+        radial-gradient(circle at 20% 80%, rgba(0, 95, 190, 0.16), transparent 30%),
+        linear-gradient(135deg, #03070d, #071522 55%, #02060b);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border: 1px solid rgba(66, 172, 255, 0.12);
+      border-radius: 50%;
+      right: -160px;
+      top: 100px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      padding: 80px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      border: 1px solid rgba(74, 177, 255, 0.45);
+      background: rgba(22, 140, 255, 0.08);
+      color: #67c1ff;
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 78px);
+      line-height: 1.02;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: #2399ff;
+    }
+
+    .hero p {
+      color: #aebdcc;
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 15px;
+      transition: 0.25s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #168cff, #56bcff);
+      color: #00101d;
+      box-shadow: 0 12px 35px rgba(22, 140, 255, 0.28);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.04);
+      color: white;
+    }
+
+    /* ================= STATS ================= */
+
+    .stats {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: #050b12;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stat {
+      padding: 25px;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .stat:last-child {
+      border-right: none;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 25px;
+      color: #43adff;
+    }
+
+    .stat span {
+      color: #8e9cab;
+      font-size: 13px;
+    }
+
+    /* ================= COMMON ================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    .section-heading small {
+      color: #42adff;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(32px, 6vw, 48px);
+      line-height: 1.1;
+      margin: 10px 0 15px;
+    }
+
+    .section-heading p {
+      color: #93a3b3;
+    }
+
+    /* ================= SERVICES ================= */
+
+    .services {
+      background: #03070d;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, rgba(13,27,42,0.95), rgba(5,11,18,0.95));
+      border: 1px solid rgba(80,170,255,0.13);
+      border-radius: 20px;
+      padding: 30px;
+      min-height: 210px;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(65,174,255,0.4);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(22,140,255,0.12);
+      border: 1px solid rgba(67,175,255,0.2);
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #899aaa;
+      font-size: 14px;
+    }
+
+    /* ================= PACKAGES ================= */
+
+    .packages {
+      background:
+        linear-gradient(rgba(3,7,13,0.96), rgba(3,7,13,0.98)),
+        radial-gradient(circle at center, #123d61, #03070d);
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .package {
+      border-radius: 22px;
+      padding: 32px;
+      background: #07111d;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .package.featured {
+      border: 1px solid #299fff;
+      box-shadow: 0 0 40px rgba(22,140,255,0.13);
+    }
+
+    .package-label {
+      color: #51b5ff;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .package h3 {
+      font-size: 26px;
+      margin: 10px 0;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .package ul {
+      list-style: none;
+      margin-bottom: 25px;
+    }
+
+    .package li {
+      padding: 8px 0;
+      color: #a8b6c4;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .package li::before {
+      content: "✓";
+      color: #35a9ff;
+      font-weight: 900;
+      margin-right: 9px;
+    }
+
+    /* ================= WHY US ================= */
+
+    .why {
+      background: #050b12;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .why-box {
+      padding: 25px;
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 17px;
+    }
+
+    .why-box h3 {
+      margin-bottom: 7px;
+    }
+
+    .why-box p {
+      color: #8e9cab;
+      font-size: 14px;
+    }
+
+    /* ================= PROCESS ================= */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .number {
+      width: 55px;
+      height: 55px;
+      margin: 0 auto 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #168cff;
+      color: #00101d;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .step p {
+      color: #899aaa;
+      font-size: 13px;
+      margin-top: 7px;
+    }
+
+    /* ================= CTA ================= */
+
+    .cta {
+      padding: 70px 0;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(30,151,255,0.2), transparent 50%),
+        #06101b;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(32px, 6vw, 50px);
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #9cabb9;
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact {
+      background: #03070d;
+    }
+
+    .contact-box {
+      max-width: 850px;
+      margin: auto;
+      padding: 40px;
+      border-radius: 24px;
+      text-align: center;
+      background: linear-gradient(145deg, #0a1827, #050a11);
+      border: 1px solid rgba(55,170,255,0.2);
+    }
+
+    .phone {
+      display: inline-block;
+      margin: 18px 0 25px;
+      font-size: clamp(28px, 6vw, 44px);
+      font-weight: 900;
+      color: #42adff;
+      letter-spacing: 1px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      padding: 35px 0;
+      background: #02050a;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      text-align: center;
+    }
+
+    footer strong {
+      font-size: 19px;
+    }
+
+    footer strong span {
+      color: #249aff;
+    }
+
+    footer p {
+      color: #667585;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 800px) {
+
+      .nav-inner {
+        min-height: 64px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 650px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+
+      .stat:last-child {
+        border-bottom: none;
+      }
+
+      .service-grid,
+      .package-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      section {
+        padding: 70px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .container {
+        width: 90%;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero-buttons,
+      .contact-buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        padding: 28px 20px;
+      }
+
+      .phone {
+        font-size: 29px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <nav>
+    <div class="container nav-inner">
+
+      <a href="#home" class="logo">
+        WASH <span>AURA</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-call" href="tel:+918770814008">Call Now</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ================= HERO ================= -->
+
+  <header class="hero" id="home">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="badge">
+          PREMIUM DOORSTEP CAR CARE
+        </div>
+
+        <h1>
+          Your Car.<br>
+          <span>Our Aura.</span>
+        </h1>
+
+        <p>
+          Premium car washing, detailing and interior care
+          delivered directly to your doorstep.
+          Give your car the showroom-fresh finish it deserves.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a class="btn btn-primary"
+             href="https://wa.me/918770814008?text=Hello%20WASH%20AURA,%20I%20want%20to%20book%20a%20car%20care%20service.">
+            WhatsApp Booking
+          </a>
+
+          <a class="btn btn-outline"
+             href="tel:+918770814008">
+            Call 8770814008
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= STATS ================= -->
+
+  <div class="stats">
+
+    <div class="container stats-grid">
+
+      <div class="stat">
+        <strong>100%</strong>
+        <span>Doorstep Service</span>
+      </div>
+
+      <div class="stat">
+        <strong>Premium</strong>
+        <span>Car Care Products</span>
+      </div>
+
+      <div class="stat">
+        <strong>Showroom</strong>
+        <span>Fresh Finish</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= SERVICES ================= -->
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>What We Do</small>
+
+        <h2>Premium Car Care</h2>
+
+        <p>
+          Professional care designed to make your vehicle
+          look cleaner, glossier and fresher.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        <div class="card">
+          <div class="icon">🚿</div>
+          <h3>Premium Car Wash</h3>
+          <p>
+            Deep exterior cleaning with careful washing
+            for a clean and glossy finish.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✨</div>
+          <h3>Exterior Detailing</h3>
+          <p>
+            Restore the shine and appearance of your
+            vehicle with detailed exterior care.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🧽</div>
+          <h3>Interior Cleaning</h3>
+          <p>
+            Freshen up seats, dashboard, carpets and
+            other interior surfaces.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💎</div>
+          <h3>Polishing</h3>
+          <p>
+            Enhance paint gloss and bring back a
+            smooth premium-looking finish.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🛡️</div>
+          <h3>Paint Protection</h3>
+          <p>
+            Add an extra layer of care to help maintain
+            your vehicle's beautiful appearance.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌟</div>
+          <h3>Complete Detailing</h3>
+          <p>
+            A complete transformation for customers
+            who want their car looking its absolute best.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PACKAGES ================= -->
+
+  <section class="packages" id="packages">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Our Packages</small>
+
+        <h2>Choose Your Finish</h2>
+
+        <p>
+          Select the level of care your car needs.
+        </p>
+
+      </div>
+
+
+      <div class="package-grid">
+
+        <div class="package">
+
+          <div class="package-label">
+            Essential
+          </div>
+
+          <h3>Fresh Wash</h3>
+
+          <div class="price">
+            Contact Us
+          </div>
+
+          <ul>
+            <li>Exterior Foam Wash</li>
+            <li>Wheel Cleaning</li>
+            <li>Tyre Cleaning</li>
+            <li>Exterior Drying</li>
+            <li>Basic Interior Cleaning</li>
+          </ul>
+
+          <a class="btn btn-outline"
+             href="https://wa.me/918770814008?text=Hello%20WASH%20AURA,%20I%20am%20interested%20in%20the%20Fresh%20Wash%20package.">
+            Book Package
+          </a>
+
+        </div>
+
+
+        <div class="package featured">
+
+          <div class="package-label">
+            Most Popular
+          </div>
+
+          <h3>Premium Detail</h3>
+
+          <div class="price">
+            Contact Us
+          </div>
+
+          <ul>
+            <li>Premium Foam Wash</li>
+            <li>Deep Exterior Cleaning</li>
+            <li>Interior Cleaning</li>
+            <li>Tyre & Wheel Care</li>
+            <li>Gloss Enhancement</li>
+          </ul>
+
+          <a class="btn btn-primary"
+             href="https://wa.me/918770814008?text=Hello%20WASH%20AURA,%20I%20am%20interested%20in%20the%20Premium%20Detail%20package.">
+            Book Premium
+          </a>
+
+        </div>
+
+
+        <div class="package">
+
+          <div class="package-label">
+            Ultimate
+          </div>
+
+          <h3>Showroom Finish</h3>
+
+          <div class="price">
+            Contact Us
+          </div>
+
+          <ul>
+            <li>Complete Exterior Detail</li>
+            <li>Complete Interior Detail</li>
+            <li>Paint Polish</li>
+            <li>Tyre & Trim Dressing</li>
+            <li>Maximum Gloss Finish</li>
+          </ul>
+
+          <a class="btn btn-outline"
+             href="https://wa.me/918770814008?text=Hello%20WASH%20AURA,%20I%20am%20interested%20in%20the%20Showroom%20Finish%20package.">
+            Book Package
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= WHY US ================= -->
+
+  <section class="why" id="why">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Why WASH AURA</small>
+
+        <h2>Luxury Care At Your Door</h2>
+
+        <p>
+          No waiting in a workshop. Professional car care
+          comes directly to you.
+        </p>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <div class="why-box">
+          <h3>🚗 Doorstep Convenience</h3>
+          <p>
+            Get your car professionally cleaned at
+            your home, office or preferred location.
+          </p>
+        </div>
+
+        <div class="why-box">
+          <h3>💧 Careful Cleaning</h3>
+          <p>
+            We focus on proper cleaning techniques
+            rather than rushing through the job.
+          </p>
+        </div>
+
+        <div class="why-box">
+          <h3>✨ Premium Finish</h3>
+          <p>
+            Our goal is a clean, glossy and fresh
+            showroom-style appearance.
+          </p>
+        </div>
+
+        <div class="why-box">
+          <h3>📱 Easy Booking</h3>
+          <p>
+            Call or WhatsApp us and schedule your
+            car care service easily.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PROCESS ================= -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Simple Process</small>
+
+        <h2>Book. Relax. Shine.</h2>
+
+        <p>
+          Getting premium car care is simple.
+        </p>
+
+      </div>
+
+
+      <div class="process-grid">
+
+        <div class="step">
+          <div class="number">1</div>
+          <h3>Contact</h3>
+          <p>Call or WhatsApp WASH AURA.</p>
+        </div>
+
+        <div class="step">
+          <div class="number">2</div>
+          <h3>Schedule</h3>
+          <p>Choose a convenient time.</p>
+        </div>
+
+        <div class="step">
+          <div class="number">3</div>
+          <h3>We Arrive</h3>
+          <p>Our team comes to your location.</p>
+        </div>
+
+        <div class="step">
+          <div class="number">4</div>
+          <h3>Enjoy</h3>
+          <p>See your car shine again.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Ready To Make Your Car Shine?</h2>
