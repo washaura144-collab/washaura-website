@@ -1,1 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>WASH AURA | Premium Doorstep Car Care</title>
+
+<meta name="description" content="WASH AURA - Premium Doorstep Car Care. Professional car wash, detailing, polishing, interior cleaning and paint protection at your doorstep.">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#03070d;
+  color:#fff;
+  line-height:1.6;
+}
+
+:root{
+  --blue:#168cff;
+  --blue2:#55b7ff;
+  --dark:#03070d;
+  --card:rgba(12,22,35,.75);
+  --gold:#d7b56d;
+  --muted:#9aa8b8;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:92%;
+  max-width:1180px;
+  margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(2,7,13,.82);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav-inner{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:900;
+  letter-spacing:3px;
+}
+
+.logo span{
+  color:var(--blue2);
+}
+
+.tagline{
+  font-size:9px;
+  color:#8fa1b4;
+  letter-spacing:2px;
+  margin-top:-4px;
+}
+
+.nav-links{
+  display:flex;
+  gap:25px;
+  align-items:center;
+}
+
+.nav-links a{
+  color:#dce8f5;
+  font-size:14px;
+}
+
+.nav-links a:hover{
+  color:var(--blue2);
+}
+
+.nav-btn{
+  padding:11px 18px;
+  border-radius:30px;
+  background:linear-gradient(135deg,#0878ed,#45b7ff);
+  color:#fff !important;
+  font-weight:700;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  padding-top:100px;
+  background:
+    radial-gradient(circle at 75% 45%,rgba(0,128,255,.23),transparent 30%),
+    radial-gradient(circle at 20% 70%,rgba(0,70,160,.16),transparent 28%),
+    #03070d;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(3,7,13,.98) 0%,
+    rgba(3,7,13,.78) 43%,
+    rgba(3,7,13,.25) 100%
+  );
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;
+  z-index:5;
+  max-width:650px;
+}
+
+.badge{
+  display:inline-block;
+  padding:8px 15px;
+  border:1px solid rgba(70,170,255,.35);
+  background:rgba(20,100,180,.12);
+  border-radius:30px;
+  color:#83caff;
+  font-size:11px;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-size:clamp(45px,7vw,82px);
+  line-height:.98;
+  letter-spacing:-3px;
+  margin-bottom:24px;
+}
+
+.hero h1 span{
+  color:var(--blue2);
+  text-shadow:0 0 35px rgba(50,170,255,.3);
+}
+
+.hero p{
+  color:#b4c2d1;
+  max-width:570px;
+  font-size:17px;
+  margin-bottom:30px;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 23px;
+  border-radius:9px;
+  font-weight:800;
+  transition:.3s;
+}
+
+.btn-primary{
+  background:linear-gradient(135deg,#0878ed,#4bbaff);
+  box-shadow:0 12px 35px rgba(10,130,255,.25);
+}
+
+.btn-primary:hover{
+  transform:translateY(-3px);
+}
+
+.btn-outline{
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.04);
+}
+
+.btn-outline:hover{
+  border-color:var(--blue2);
+}
+
+/* CAR VISUAL */
+
+.hero-car{
+  position:absolute;
+  right:-5%;
+  bottom:2%;
+  width:min(62vw,850px);
+  opacity:.92;
+  z-index:2;
+  filter:
+    drop-shadow(0 30px 40px rgba(0,0,0,.8))
+    drop-shadow(0 0 45px rgba(0,120,255,.15));
+}
+
+/* RAIN */
+
+.water{
+  position:absolute;
+  width:100%;
+  height:100%;
+  inset:0;
+  z-index:3;
+  pointer-events:none;
+  opacity:.18;
+  background-image:
+    radial-gradient(circle,rgba(255,255,255,.8) 1px,transparent 2px);
+  background-size:45px 45px;
+  animation:rain 8s linear infinite;
+}
+
+@keyframes rain{
+  from{transform:translateY(-50px)}
+  to{transform:translateY(50px)}
+}
+
+/* STATS */
+
+.stats{
+  position:relative;
+  z-index:10;
+  margin-top:-50px;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+
+.stat{
+  padding:22px;
+  text-align:center;
+  background:rgba(9,18,30,.86);
+  border:1px solid rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);
+}
+
+.stat strong{
+  display:block;
+  font-size:26px;
+}
+
+.stat span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+/* SECTIONS */
+
+section{
+  padding:100px 0;
+}
+
+.section-head{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 50px;
+}
+
+.eyebrow{
+  color:var(--blue2);
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:800;
+  margin-bottom:12px;
+}
+
+.section-head h2{
+  font-size:clamp(32px,5vw,52px);
+  line-height:1.1;
+  margin-bottom:15px;
+}
+
+.section-head p{
+  color:var(--muted);
+}
+
+/* SERVICES */
+
+.services{
+  background:
+    linear-gradient(rgba(3,7,13,.94),rgba(3,7,13,.97)),
+    radial-gradient(circle at 50% 0%,#075ca0,transparent 50%);
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.card{
+  background:linear-gradient(
+    145deg,
+    rgba(16,30,46,.8),
+    rgba(5,12,21,.8)
+  );
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  padding:30px;
+  transition:.35s;
+  backdrop-filter:blur(15px);
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(65,174,255,.5);
+  box-shadow:0 20px 60px rgba(0,90,180,.14);
+}
+
+.icon{
+  width:56px;
+  height:56px;
+  display:grid;
+  place-items:center;
+  border-radius:14px;
+  background:rgba(21,137,255,.12);
+  border:1px solid rgba(60,170,255,.2);
+  font-size:27px;
+  margin-bottom:20px;
+}
+
+.card h3{
+  margin-bottom:10px;
+  font-size:20px;
+}
+
+.card p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* PROCESS */
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.step{
+  text-align:center;
+  padding:25px 15px;
+}
+
+.number{
+  width:52px;
+  height:52px;
+  margin:0 auto 18px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,#0878ed,#43b8ff);
+  font-weight:900;
+}
+
+.step p{
+  color:var(--muted);
+  font-size:14px;
+  margin-top:7px;
+}
+
+/* PACKAGES */
+
+.packages{
+  background:#050b13;
+}
+
+.price-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.price-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.price-card.featured{
+  border-color:rgba(55,174,255,.65);
+  box-shadow:0 0 50px rgba(0,120,255,.13);
+}
+
+.popular{
+  position:absolute;
+  top:16px;
+  right:16px;
+  background:var(--gold);
+  color:#111;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:10px;
+  font-weight:900;
+}
+
+.price{
+  font-size:42px;
+  font-weight:900;
+  margin:15px 0;
+}
+
+.price small{
+  font-size:13px;
+  color:var(--muted);
+  font-weight:400;
+}
+
+.features{
+  list-style:none;
+  margin:25px 0;
+}
+
+.features li{
+  padding:9px 0;
+  color:#b8c7d7;
+  font-size:14px;
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.features li:before{
+  content:"✓";
+  color:#51baff;
+  margin-right:9px;
+}
+
+/* GALLERY */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+
+.gallery-item{
+  min-height:230px;
+  border-radius:15px;
+  overflow:hidden;
+  position:relative;
+  background:
+    radial-gradient(circle at 30% 30%,rgba(60,170,255,.25),transparent 25%),
+    linear-gradient(135deg,#06101d,#0d2945);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.gallery-item:after{
+  content:"WASH AURA • DETAILING";
+  position:absolute;
+  bottom:15px;
+  left:18px;
+  color:#fff;
+  font-size:11px;
+  letter-spacing:2px;
+  font-weight:900;
+  opacity:.75;
+}
+
+/* WHY */
+
+.why{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.why h2{
+  font-size:clamp(32px,5vw,48px);
+  line-height:1.1;
+  margin-bottom:18px;
+}
+
+.why-text{
+  color:#91a0b0;
+}
+
+.check{
+  display:flex;
+  gap:14px;
+  margin:18px 0;
+  color:#c5d1dd;
+}
+
+.check b{
+  color:#5ebeff;
+}
+
+.why-box{
+  padding:40px;
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(0,128,255,.2),transparent 35%),
+    linear-gradient(145deg,#0b1725,#040a11);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.
