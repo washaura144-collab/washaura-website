@@ -1,524 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Washaura – Luxury Doorstep Car Detailing in Raipur</title>
-  <meta name="description" content="Washaura offers premium doorstep car wash, interior deep cleaning, and add-on services in Raipur. Book on WhatsApp in 60 seconds."/>
-  <meta property="og:title" content="Washaura – Premium Doorstep Car Detailing"/>
-  <meta property="og:description" content="Showroom-level finish at your doorstep. Book now on WhatsApp."/>
-  <meta property="og:type" content="website"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wash Aura - Premium Doorstep Car Care | Raipur</title>
+<meta name="description" content="Premium doorstep car detailing, exterior deep cleaning and interior detailing in Raipur, Chhattisgarh.">
+<meta name="theme-color" content="#080808">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    /* PREMIUM BLACK & GOLD THEME */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg:       #0a0a0a;         
-      --bg2:      #121212;         
-      --card:     #171717;
-      --border:   rgba(212, 175, 55, 0.2); 
-      --primary:  #d4af37;         
-      --gold:     #e5c158;         
-      --white:    #ffffff;
-      --muted:    #9e9e9e;
-      --r:        16px;
-      --shadow:   0 12px 40px rgba(0,0,0,0.6);
-    }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg); color: var(--white);
-      line-height: 1.6; -webkit-font-smoothing: antialiased;
-    }
-    a { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
-    img { display: block; max-width: 100%; }
-    section { padding: 90px 0; }
-    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-    
-    .section-label {
-      font-size: 13px; font-weight: 700; letter-spacing: 4px;
-      text-transform: uppercase; color: var(--primary); margin-bottom: 12px;
-    }
-    .section-title {
-      font-family: 'Manrope', sans-serif; font-size: clamp(28px, 4vw, 42px);
-      font-weight: 800; line-height: 1.2; color: var(--white);
-    }
-    .section-sub {
-      margin-top: 14px; color: var(--muted); font-size: 16px; max-width: 700px;
-    }
-    .section-head { margin-bottom: 50px; }
-    .section-head.center { text-align: center; }
-    .section-head.center .section-sub { margin: 14px auto 0; }
-    .highlight { color: var(--primary); }
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#070707;--bg2:#0e0e0e;--card:#141414;--gold:#d8ad32;--gold2:#f1d06a;--white:#f8f8f8;--muted:#999;--line:rgba(216,173,50,.2)}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.65}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+section{padding:80px max(20px,calc((100% - 1120px)/2))}
+.gold{color:var(--gold)}
+.dark{background:var(--bg2)}
+.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold);font-weight:800;margin-bottom:13px}
+.head{text-align:center;max-width:740px;margin:0 auto 45px}
+.head h2{font-size:clamp(29px,5vw,45px);line-height:1.15}
+.head p{color:var(--muted);margin-top:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:0 24px;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;transition:.25s}
+.btn-gold{background:linear-gradient(135deg,#f0cc58,#b98b14);color:#080808}
+.btn-line{border:1px solid var(--gold);color:var(--gold)}
+.btn:hover{transform:translateY(-2px)}
 
-    /* BUTTONS */
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 15px 32px; border-radius: 4px; 
-      font-weight: 700; font-size: 15px; font-family: 'Manrope', sans-serif;
-      text-transform: uppercase; letter-spacing: 1px;
-      cursor: pointer; border: none; transition: all .3s ease; white-space: nowrap;
-    }
-    .btn-primary { background: linear-gradient(135deg, #d4af37, #b28a24); color: #000; }
-    .btn-primary:hover { box-shadow: 0 8px 24px rgba(212,175,55,0.4); transform: translateY(-2px); }
-    .btn-outline { background: transparent; border: 1px solid var(--primary); color: var(--primary); }
-    .btn-outline:hover { background: var(--primary); color: #000; }
-    .btn-wa { background: #25d366; color: #fff; }
-    .btn-wa:hover { box-shadow: 0 8px 24px rgba(37,211,102,0.4); transform: translateY(-2px); }
+header{height:74px;position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;padding:0 max(20px,calc((100% - 1150px)/2));background:rgba(5,5,5,.94);backdrop-filter:blur(12px);border-bottom:1px solid #181818}
+.logo{margin-right:auto;display:flex;flex-direction:column;line-height:1}
+.logo b{font-size:19px;letter-spacing:1px}
+.logo b span{color:var(--gold)}
+.logo small{font-size:6px;letter-spacing:1.4px;color:#888;margin-top:7px}
+nav{display:flex;gap:22px;align-items:center}
+nav a{font-size:10px;color:#aaa;text-transform:uppercase;font-weight:700}
+nav a:hover{color:var(--gold)}
+.navbook{margin-left:25px;background:var(--gold);color:#050505;padding:10px 14px;font-size:9px;font-weight:800}
+#hamb{display:none;background:none;color:white;border:0;font-size:25px}
 
-    /* NAVBAR */
-    .navbar {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
-      background: rgba(10,10,10,0.95); backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .nav-inner {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 16px 24px; max-width: 1140px; margin: 0 auto;
-    }
-    .nav-logo { font-family: 'Manrope', sans-serif; font-size: 24px; font-weight: 800; letter-spacing: 1px; }
-    .nav-logo span { color: var(--primary); font-weight: 400; }
-    .nav-links { display: flex; gap: 32px; }
-    .nav-links a { font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); transition: .3s; }
-    .nav-links a:hover { color: var(--primary); }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
-    .hamburger span { width: 24px; height: 2px; background: var(--white); transition: .3s; }
-    .mobile-menu { display: none; flex-direction: column; background: var(--bg2); border-top: 1px solid var(--border); }
-    .mobile-menu a { padding: 16px 24px; color: var(--muted); border-bottom: 1px solid rgba(255,255,255,0.05); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1px;}
-    .mobile-menu.open { display: flex; }
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:130px;background:radial-gradient(circle at 78% 35%,rgba(216,173,50,.17),transparent 33%),linear-gradient(125deg,#070707,#0c0b07)}
+.hero-in{max-width:790px}
+.hero h1{font-size:clamp(40px,7vw,72px);line-height:1.03;letter-spacing:-2px;text-transform:uppercase}
+.hero p{max-width:650px;color:#aaa;font-size:16px;margin:24px 0 28px}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.rating{display:flex;align-items:center;gap:10px;margin-top:32px;width:max-content;border-left:2px solid var(--gold);padding-left:14px}
+.rating b{font-size:22px}
+.stars{color:#f7b900}
+.rating small{color:#888;font-size:10px}
 
-    /* HERO */
-    .hero {
-      min-height: 100vh; display: flex; align-items: center;
-      background: radial-gradient(circle at 70% 30%, rgba(212,175,55,0.1) 0%, transparent 50%), var(--bg);
-      padding: 140px 0 80px;
-    }
-    .hero-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; }
-    .hero-badge {
-      display: inline-flex; border: 1px solid var(--border); padding: 8px 16px;
-      font-size: 12px; font-weight: 600; color: var(--primary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px;
-    }
-    .hero-title { margin-bottom: 20px; text-transform: uppercase; letter-spacing: -1px; }
-    .hero-sub { margin-bottom: 36px; font-size: 18px; line-height: 1.8; }
-    .hero-btns { display: flex; gap: 16px; margin-bottom: 40px; }
-    .hero-trust { display: flex; gap: 30px; }
-    .trust-chip { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
-    .trust-chip span { color: var(--primary); font-size: 16px; }
+.trust{padding:20px;display:flex;justify-content:center;gap:45px;flex-wrap:wrap;background:#0d0d0d;border-block:1px solid #181818;color:#999;font-size:11px}
 
-    /* PACKAGES */
-    .packages { background: var(--bg2); }
-    .pkg-container { display: flex; flex-direction: column; gap: 40px; }
-    .pkg-wide-card {
-      background: var(--card); border: 1px solid var(--border);
-      padding: 40px; border-radius: 8px; position: relative; overflow: hidden;
-    }
-    .pkg-wide-card::before {
-      content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
-      background: var(--primary);
-    }
-    .pkg-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px; }
-    .pkg-title { font-family: 'Manrope', sans-serif; font-size: 28px; font-weight: 800; color: var(--white); }
-    .pkg-features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 24px; }
-    .pkg-features-grid li { font-size: 14.5px; color: var(--muted); display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
-    .pkg-features-grid li::before { content: '✦'; color: var(--primary); font-size: 12px; margin-top: 2px; }
+.servicegrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:linear-gradient(145deg,#161616,#101010);border:1px solid var(--line);padding:32px}
+.card h3{font-size:21px;margin-bottom:23px}
+.card li{font-size:12.5px;color:#aaa;padding:8px 0;border-bottom:1px solid #202020}
+.card li:before{content:"✦";font-size:7px;color:var(--gold);margin-right:10px}
 
-    /* PRICING BANNER */
-    .pricing-banner {
-      background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(10,10,10,1));
-      border: 1px solid var(--primary); border-radius: 8px; padding: 40px;
-      margin-top: 50px; text-align: center;
-    }
-    .pricing-banner h3 { font-family: 'Manrope', sans-serif; font-size: 24px; color: var(--primary); margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;}
-    .price-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-    .price-item { background: var(--bg); padding: 20px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); }
-    .price-car { font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-    .price-amt { font-family: 'Manrope', sans-serif; font-size: 22px; font-weight: 700; color: var(--white); }
+.pricing{margin-top:30px;padding:34px;border:1px solid var(--gold);background:linear-gradient(135deg,#17140b,#090909);text-align:center}
+.pricing h3{font-size:23px;margin-bottom:22px}
+.pricegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.pricegrid div{background:#090909;border:1px solid #252117;padding:19px 8px}
+.pricegrid small{display:block;color:#888;font-size:8px;letter-spacing:1px;margin-bottom:7px}
+.pricegrid b{font-size:15px}
+.note{font-size:10px;color:#777;margin:18px 0}
 
-    /* ADD ONS */
-    .addons { background: var(--bg); }
-    .addon-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 60px; margin-bottom: 40px; }
-    .addon-item { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 12px; border-bottom: 1px dashed rgba(255,255,255,0.15); }
-    .addon-name { font-size: 15px; color: var(--white); font-weight: 500; }
-    .addon-price { font-family: 'Manrope', sans-serif; font-size: 15px; font-weight: 700; color: var(--primary); }
-    
-    .more-addons-box { background: var(--card); padding: 30px; border: 1px solid var(--border); border-radius: 6px; }
-    .more-addons-box h4 { color: var(--primary); margin-bottom: 20px; font-family: 'Manrope', sans-serif; text-transform: uppercase; letter-spacing: 1px; font-size: 16px; }
-    .more-addons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-    .more-addons-grid li { font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
-    .more-addons-grid li::before { content: '✓'; color: var(--primary); }
+.addons{display:grid;grid-template-columns:1fr 1fr;gap:0 45px}
+.addon{display:flex;justify-content:space-between;gap:20px;padding:17px 0;border-bottom:1px dashed #333;font-size:12.5px}
+.addon span{color:var(--gold);font-weight:800;white-space:nowrap}
+.more{margin-top:42px;background:#111;border:1px solid var(--line);padding:28px}
+.more h3{color:var(--gold);margin-bottom:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:10.5px;color:#bbb;background:#171717;border:1px solid #292929;padding:9px 11px}
 
-    /* UPCOMING */
-    .upcoming { background: var(--bg2); border-top: 1px solid var(--border); }
-    .upcoming-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .up-card { background: var(--bg); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 6px; transition: .3s; }
-    .up-card:hover { border-color: var(--primary); }
-    .up-card h3 { font-family: 'Manrope', sans-serif; font-size: 18px; color: var(--primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px;}
-    .up-card ul { list-style: none; }
-    .up-card ul li { font-size: 14px; color: var(--muted); margin-bottom: 10px; display: flex; gap: 8px; align-items: flex-start; }
-    .up-card ul li::before { content: '✦'; color: var(--gold); font-size: 10px; margin-top: 4px; }
+.soon{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.soon article{background:#080808;border:1px solid #222;padding:25px;min-height:170px}
+.soon article:hover{border-color:var(--gold)}
+.soon small{font-size:7px;letter-spacing:2px;color:var(--gold)}
+.soon h3{font-size:16px;color:var(--gold);margin:12px 0 8px}
+.soon p{font-size:11px;color:#888}
+.soon .featured{border-color:var(--gold);background:linear-gradient(145deg,#181408,#080808)}
 
-    /* CONTACT & FOOTER */
-    .contact { background: var(--bg); }
-    .form-group input, .form-group select, .form-group textarea {
-      width: 100%; background: var(--card); border: 1px solid rgba(255,255,255,0.1); padding: 16px; color: var(--white); font-family: inherit; margin-top: 6px; border-radius: 4px;
-    }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--primary); outline: none; }
-    
-    .footer { background: var(--bg2); padding: 60px 0 30px; border-top: 1px solid var(--border); }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-    .footer-col h4 { color: var(--white); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
-    .footer-col a { display: block; color: var(--muted); margin-bottom: 8px; font-size: 14px; }
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.photo{height:320px;background:#111;border:1px solid #262626;overflow:hidden;position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.photo img:hover{transform:scale(1.03)}
+.photo label{position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,.78);padding:7px 10px;color:var(--gold);font-size:9px}
 
-    .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 20px rgba(37,211,102,0.4); z-index: 999; text-decoration: none; color: white;}
+.googlebox{display:flex;align-items:center;gap:18px;max-width:950px;margin:0 auto 22px;padding:23px;background:#fff;color:#111}
+.g{font-size:37px;font-weight:800;color:#4285f4}
+.googlebox p{color:#777;font-size:10px}
+.big-rating{font-size:24px;font-weight:800}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:950px;margin:auto}
+.review{background:#121212;border:1px solid #222;padding:23px}
+.review p{color:#aaa;font-size:11.5px;margin:12px 0 18px}
+.review b{font-size:12px}
+.review small{display:block;color:#777;font-size:8px}
+.reviewbuttons{text-align:center;margin-top:26px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
 
-    @media (max-width: 980px) {
-      .hero-inner { grid-template-columns: 1fr; }
-      .nav-links, .nav-cta { display: none; }
-      .hamburger { display: flex; }
-      .pkg-features-grid { grid-template-columns: 1fr; }
-      .addon-grid, .price-grid, .upcoming-grid { grid-template-columns: 1fr 1fr; }
-      .more-addons-grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 600px) {
-      .addon-grid, .price-grid, .upcoming-grid, .footer-grid, .more-addons-grid { grid-template-columns: 1fr; }
-      .pkg-wide-card { padding: 24px; }
-    }
-  </style>
+.location{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.location h2{font-size:clamp(30px,5vw,45px);line-height:1.15}
+.location h3{font-size:15px;margin:22px 0 10px}
+.location address{font-style:normal;color:#999;font-size:13px}
+.location p{color:#999;font-size:12px;margin:15px 0 24px}
+.map{min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid var(--line);background:radial-gradient(circle,rgba(216,173,50,.14),transparent 45%),#090909}
+.map strong{font-size:19px;margin:10px}
+.map small{color:#888}
+.pin{font-size:44px;color:var(--gold)}
+
+.cta{text-align:center;background:radial-gradient(circle,rgba(216,173,50,.13),transparent 40%),#070707}
+.cta>div{max-width:650px;margin:auto}
+.cta h2{font-size:clamp(31px,5vw,48px);line-height:1.12}
+.cta p{color:#999;margin:15px 0 25px}
+
+footer{padding:50px max(20px,calc((100% - 1100px)/2)) 25px;background:#0d0d0d;border-top:1px solid var(--line)}
+.footergrid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:35px}
+.footergrid>div{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.footergrid h3 span{color:var(--gold)}
+.footergrid p,.footergrid a{font-size:10.5px;color:#888}
+.footergrid b{font-size:10px;letter-spacing:1px}
+.copy{text-align:center;color:#666;font-size:9px;border-top:1px solid #222;margin-top:35px;padding-top:20px}
+.wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;font-size:25px;z-index:999;box-shadow:0 6px 28px rgba(37,211,102,.4)}
+
+@media(max-width:800px){
+nav,.navbook{display:none}
+#hamb{display:block}
+nav.open{display:flex;position:absolute;top:74px;left:0;right:0;background:#090909;flex-direction:column;align-items:flex-start;padding:22px;border-bottom:1px solid var(--line)}
+.servicegrid,.location{grid-template-columns:1fr}
+.pricegrid{grid-template-columns:1fr 1fr}
+.soon{grid-template-columns:1fr 1fr}
+.reviews{grid-template-columns:1fr}
+}
+@media(max-width:550px){
+section{padding:68px 20px}
+.hero{padding-top:120px}
+.hero h1{font-size:38px}
+.hero p{font-size:13.5px}
+.trust{justify-content:flex-start;gap:13px 22px}
+.card{padding:24px 20px}
+.pricegrid,.addons,.soon,.gallery,.footergrid{grid-template-columns:1fr}
+.pricing{padding:25px 14px}
+.photo{height:300px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"AutoWash",
+ "name":"Wash Aura - Premium Doorstep Car Care",
+ "telephone":"+91-8770814008",
+ "address":{
+  "@type":"PostalAddress",
+  "streetAddress":"New Shanti Nagar, Shankar Nagar",
+  "addressLocality":"Raipur",
+  "addressRegion":"Chhattisgarh",
+  "postalCode":"492004",
+  "addressCountry":"IN"
+ },
+ "areaServed":"Raipur",
+ "sameAs":["https://share.google/JQfHmCFxZoJJUfrGR"]
+}
+</script>
 </head>
+
 <body>
-  <!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="#" class="nav-logo">Wash<span>aura</span></a>
-    <div class="nav-links">
-      <a href="#packages">Deep Cleaning</a>
-      <a href="#addons">Add-Ons</a>
-      <a href="#upcoming">Coming Soon</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="nav-cta">
-      <a href="https://wa.me/918770814008?text=Hi%20Washaura%2C%20I%20want%20to%20book%20a%20car%20detailing" class="btn btn-primary" target="_blank">Book Now</a>
-    </div>
-    <button class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#packages" onclick="closeMenu()">Deep Cleaning</a>
-    <a href="#addons" onclick="closeMenu()">Add-Ons</a>
-    <a href="#upcoming" onclick="closeMenu()">Coming Soon</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-  </div>
+
+<header>
+<a href="#" class="logo">
+<b>WASH <span>AURA</span></b>
+<small>PREMIUM DOORSTEP CAR CARE</small>
+</a>
+
+<nav id="menu">
+<a href="#services">Services</a>
+<a href="#addons">Add-ons</a>
+<a href="#soon">Coming Soon</a>
+<a href="#work">Our Work</a>
+<a href="#reviews">Reviews</a>
+<a href="#location">Location</a>
 </nav>
 
-<!-- HERO -->
+<a class="navbook" href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20service">BOOK NOW</a>
+<button id="hamb" aria-label="Open menu">☰</button>
+</header>
+
+
 <section class="hero">
-  <div class="container hero-inner">
-    <div>
-      <div class="hero-badge">Ultra-Premium Detailing · Raipur</div>
-      <h1 class="hero-title">Showroom Finish.<br><span class="highlight">Delivered To You.</span></h1>
-      <p class="hero-sub">Experience luxury car care at your doorstep. From snow foam washes and deep paint decontamination to interior restoration. No compromises, just perfection.</p>
-      <div class="hero-btns">
-        <a href="https://wa.me/918770814008?text=Hi%20Washaura%2C%20I%20want%20to%20book" class="btn btn-primary" target="_blank">Book on WhatsApp</a>
-      </div>
-      <div class="hero-trust">
-        <div class="trust-chip"><span>✦</span> Expert Professionals</div>
-        <div class="trust-chip"><span>✦</span> 100% Doorstep Service</div>
-      </div>
-    </div>
-  </div>
+<div class="hero-in">
+
+<div class="eyebrow">PREMIUM DOORSTEP CAR CARE • RAIPUR</div>
+
+<h1>
+Your Car Deserves<br>
+<span class="gold">More Than A Wash.</span>
+</h1>
+
+<p>Professional exterior and interior car detailing delivered directly to your doorstep in Raipur. Premium care, detailed finishing and real results.</p>
+
+<div class="actions">
+<a class="btn btn-gold" href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20car%20detailing%20service">Book on WhatsApp</a>
+<a class="btn btn-line" href="#services">Explore Services</a>
+</div>
+
+<a class="rating" href="https://share.google/JQfHmCFxZoJJUfrGR" target="_blank" rel="noopener">
+<b>5.0</b>
+<span class="stars">★★★★★</span>
+<small>9 Google Reviews ↗</small>
+</a>
+
+</div>
 </section>
 
-<!-- MAIN PACKAGES -->
-<section class="packages" id="packages">
-  <div class="container">
-    <div class="section-head center">
-      <div class="section-label">Signature Services</div>
-      <h2 class="section-title">Complete Deep Cleaning <span class="highlight">Packages</span></h2>
-      <p class="section-sub">Comprehensive detailing inside and out. We touch every inch of your vehicle.</p>
-    </div>
-    
-    <div class="pkg-container">
-      <!-- EXTERIOR -->
-      <div class="pkg-wide-card">
-        <div class="pkg-header">
-          <h3 class="pkg-title">Exterior Deep Cleaning</h3>
-        </div>
-        <ul class="pkg-features-grid">
-          <li>Snow Foam Wash</li>
-          <li>Two Bucket Hand Wash</li>
-          <li>Wheel & Alloy Cleaning</li>
-          <li>Wheel Arch Cleaning</li>
-          <li>Door Jamb Cleaning</li>
-          <li>Fuel Lid Cleaning</li>
-          <li>Bug & Tar Removal</li>
-          <li>Iron Fallout Removal</li>
-          <li>Clay Bar Treatment</li>
-          <li>Exterior Glass Cleaning</li>
-          <li>Tyre Dressing</li>
-          <li>Plastic Trim Dressing</li>
-          <li>Spray Wax / Spray Ceramic Sealant</li>
-        </ul>
-      </div>
 
-      <!-- INTERIOR -->
-      <div class="pkg-wide-card">
-        <div class="pkg-header">
-          <h3 class="pkg-title">Interior Deep Cleaning</h3>
-        </div>
-        <ul class="pkg-features-grid">
-          <li>Complete Vacuum Cleaning</li>
-          <li>Fabric Seat Shampoo</li>
-          <li>Leather Cleaning & Conditioning</li>
-          <li>Carpet Shampoo</li>
-          <li>Floor Mat Cleaning</li>
-          <li>Dashboard Cleaning + UV Protection</li>
-          <li>Door Panel Cleaning</li>
-          <li>Steering Wheel Cleaning</li>
-          <li>Gear Knob & Handbrake Cleaning</li>
-          <li>AC Vent Cleaning</li>
-          <li>Cup Holder Cleaning</li>
-          <li>Center Console Cleaning</li>
-          <li>Buttons & Switches Cleaning</li>
-          <li>Door Pocket Cleaning</li>
-          <li>Seat Rail Cleaning</li>
-          <li>Seat Belt Cleaning</li>
-          <li>Sun Visor & Vanity Mirror Cleaning</li>
-          <li>Interior Glass Cleaning</li>
-          <li>Boot (Dicky) Cleaning</li>
-          <li>Plastic Dressing</li>
-          <li>Odor Removal / Air Freshener</li>
-        </ul>
-      </div>
-    </div>
+<div class="trust">
+<div>✦ Doorstep Service</div>
+<div>✦ Professional Car Care</div>
+<div>✦ Premium Products</div>
+<div>✦ Raipur, Chhattisgarh</div>
+</div>
 
-    <!-- PRICING BANNER -->
-    <div class="pricing-banner">
-      <h3>Suggested Pricing</h3>
-      <p style="color: var(--muted); margin-bottom: 24px; font-size: 15px;">(Exterior + Interior Complete Package)</p>
-      <div class="price-grid">
-        <div class="price-item">
-          <div class="price-car">Hatchback</div>
-          <div class="price-amt">₹1,299 – 1,699</div>
-        </div>
-        <div class="price-item">
-          <div class="price-car">Sedan</div>
-          <div class="price-amt">₹1,499 – 1,999</div>
-        </div>
-        <div class="price-item">
-          <div class="price-car">Compact SUV</div>
-          <div class="price-amt">₹1,799 – 2,299</div>
-        </div>
-        <div class="price-item">
-          <div class="price-car">Full-Size SUV</div>
-          <div class="price-amt">₹2,299 – 3,499</div>
-        </div>
-      </div>
-      <br>
-      <a href="https://wa.me/918770814008?text=Hi%2C%20I%20want%20to%20know%20the%20exact%20quote%20for%20Deep%20Cleaning" class="btn btn-primary" target="_blank" style="margin-top: 10px;">Get Exact Quote</a>
-    </div>
-  </div>
+
+<section id="services" class="dark">
+
+<div class="head">
+<div class="eyebrow">SIGNATURE DETAILING</div>
+<h2>Complete <span class="gold">Deep Cleaning</span></h2>
+<p>Detailed care for the exterior and interior of your vehicle.</p>
+</div>
+
+
+<div class="servicegrid">
+
+<div class="card">
+<h3>🚘 Exterior Deep Cleaning</h3>
+<ul>
+<li>Snow Foam Wash</li>
+<li>Two Bucket Hand Wash</li>
+<li>Wheel & Alloy Cleaning</li>
+<li>Wheel Arch Cleaning</li>
+<li>Door Jamb Cleaning</li>
+<li>Fuel Lid Cleaning</li>
+<li>Bug & Tar Removal</li>
+<li>Iron Fallout Removal</li>
+<li>Clay Bar Treatment</li>
+<li>Exterior Glass Cleaning</li>
+<li>Tyre Dressing</li>
+<li>Plastic Trim Dressing</li>
+<li>Spray Wax / Spray Ceramic Sealant</li>
+</ul>
+</div>
+
+
+<div class="card">
+<h3>🛋️ Interior Deep Cleaning</h3>
+<ul>
+<li>Complete Vacuum Cleaning</li>
+<li>Fabric Seat Shampoo</li>
+<li>Leather Cleaning & Conditioning</li>
+<li>Carpet Shampoo</li>
+<li>Floor Mat Cleaning</li>
+<li>Dashboard Cleaning + UV Protection</li>
+<li>Door Panel Cleaning</li>
+<li>Steering Wheel Cleaning</li>
+<li>Gear Knob & Handbrake Cleaning</li>
+<li>AC Vent Cleaning</li>
+<li>Cup Holder Cleaning</li>
+<li>Center Console Cleaning</li>
+<li>Buttons & Switches Cleaning</li>
+<li>Door Pocket Cleaning</li>
+<li>Seat Rail Cleaning</li>
+<li>Seat Belt Cleaning</li>
+<li>Sun Visor & Vanity Mirror Cleaning</li>
+<li>Interior Glass Cleaning</li>
+<li>Boot (Dicky) Cleaning</li>
+<li>Plastic Dressing</li>
+<li>Odor Removal / Air Freshener</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="pricing">
+<div class="eyebrow">SUGGESTED PRICING</div>
+<h3>Complete Deep Cleaning</h3>
+
+<div class="pricegrid">
+<div><small>HATCHBACK</small><b>₹1,299–1,699</b></div>
+<div><small>SEDAN</small><b>₹1,499–1,999</b></div>
+<div><small>COMPACT SUV</small><b>₹1,799–2,299</b></div>
+<div><small>FULL-SIZE SUV</small><b>₹2,299–3,499</b></div>
+</div>
+
+<p class="note">Final price depends on vehicle size and condition.</p>
+
+<a class="btn btn-gold" href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20please%20give%20me%20an%20exact%20quote.">Get Exact Quote</a>
+</div>
+
 </section>
 
-<!-- ADD ONS -->
-<section class="addons" id="addons">
-  <div class="container">
-    <div class="section-head center">
-      <div class="section-label">Customize Your Detail</div>
-      <h2 class="section-title">A La Carte & <span class="highlight">Add-On Services</span></h2>
-      <p class="section-sub">Enhance your car's look with specific restoration and protection services.</p>
-    </div>
-    
-    <div class="addon-grid">
-      <div class="addon-item">
-        <span class="addon-name">Spray Ceramic Protection</span>
-        <span class="addon-price">₹499 – 799</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Leather Conditioning</span>
-        <span class="addon-price">₹499 – 999</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Fabric Seat Protection</span>
-        <span class="addon-price">₹499 – 999</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Headlight Polish (Light Oxidation)</span>
-        <span class="addon-price">₹499 – 999</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Engine Bay Dressing (After light clean)</span>
-        <span class="addon-price">₹399 – 699</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Odor Removal</span>
-        <span class="addon-price">₹299 – 599</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Glass Water Spot Removal (Mild)</span>
-        <span class="addon-price">₹299 – 599</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Plastic Trim Restoration</span>
-        <span class="addon-price">₹299 – 599</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Rain Repellent (Front Windshield)</span>
-        <span class="addon-price">₹299 – 499</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Interior UV Protection</span>
-        <span class="addon-price">₹199 – 399</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Tyre & Trim Protection</span>
-        <span class="addon-price">₹199 – 399</span>
-      </div>
-      <div class="addon-item">
-        <span class="addon-name">Door Jamb Detailing</span>
-        <span class="addon-price">₹199 – 399</span>
-      </div>
-    </div>
 
-    <div class="more-addons-box">
-      <h4>More Custom Add-ons & Essentials</h4>
-      <ul class="more-addons-grid">
-        <li>Finishing Touch & Shining Polish</li>
-        <li>Clay Bar / Clay Mitt & Lubricant</li>
-        <li>Leather Restoration</li>
-        <li>Roof Lining Cleaning</li>
-        <li>Iron Remover Treatment</li>
-        <li>Tar Remover Treatment</li>
-        <li>Instant Gloss Wax</li>
-        <li>Glass Cleaner & Repellent</li>
-        <li>Trim & Tyre Dressing</li>
-        <li>Engine Bay Cleaning</li>
-      </ul>
-      <p style="margin-top: 16px; font-size: 13px; color: var(--muted); font-style: italic;">* Price for custom add-ons available upon inspection or WhatsApp request.</p>
-    </div>
-  </div>
+<section id="addons">
+
+<div class="head">
+<div class="eyebrow">CUSTOMISE YOUR DETAIL</div>
+<h2>Premium <span class="gold">Add-On Services</span></h2>
+</div>
+
+
+<div class="addons">
+
+<div class="addon"><b>Spray Ceramic Protection</b><span>₹499–799</span></div>
+
+<div class="addon"><b>Tyre & Trim Protection</b><span>₹199–399</span></div>
+
+<div class="addon"><b>Odor Removal</b><span>₹299–599</span></div>
+
+<div class="addon"><b>Rain Repellent (Front Windshield)</b><span>₹299–499</span></div>
+
+<div class="addon"><b>Glass Water Spot Removal (Mild)</b><span>₹299–599</span></div>
+
+<div class="addon"><b>Interior UV Protection</b><span>₹199–399</span></div>
+
+<div class="addon"><b>Leather Conditioning</b><span>₹499–999</span></div>
+
+<div class="addon"><b>Fabric Seat Protection</b><span>₹499–999</span></div>
+
+<div class="addon"><b>Engine Bay Dressing (after light cleaning)</b><span>₹399–699</span></div>
+
+<div class="addon"><b>Plastic Trim Restoration</b><span>₹299–599</span></div>
+
+<div class="addon"><b>Headlight Polish (light oxidation)</b><span>₹499–999</span></div>
+
+<div class="addon"><b>Door Jamb Detailing</b><span>₹199–399</span></div>
+
+</div>
+
+
+<div class="more">
+
+<h3>More Finishing & Protection Options</h3>
+
+<div class="chips">
+<span>Finishing Touch</span>
+<span>Tyre Dressing</span>
+<span>Trim Dressing</span>
+<span>Glass Cleaner</span>
+<span>Door Jamb Cleaning</span>
+<span>Iron Remover</span>
+<span>Tar Remover</span>
+<span>Clay Bar / Clay Mitt</span>
+<span>Clay Lubricant Spray</span>
+<span>Glass Water Repellent</span>
+<span>Finishing & Shining Polish</span>
+<span>Leather Restoration</span>
+<span>Fabric Protection</span>
+<span>Engine Bay Cleaning</span>
+<span>Headlight Restoration</span>
+<span>Odor Removal</span>
+<span>Roof Lining Cleaning</span>
+<span>Instant Gloss Wax</span>
+<span>Plastic Trim Protection</span>
+<span>Interior UV Protection</span>
+</div>
+
+</div>
 </section>
 
-<!-- UPCOMING SERVICES (PAINT CORRECTION) -->
-<section class="upcoming" id="upcoming">
-  <div class="container">
-    <div class="section-head center">
-      <div class="section-label">Coming Soon</div>
-      <h2 class="section-title">Ultimate <span class="highlight">Paint Correction</span></h2>
-      <p class="section-sub">Advanced machine polishing and heavy-duty paint protection launching soon in Raipur.</p>
-    </div>
-    <div class="upcoming-grid">
-      <div class="up-card">
-        <h3>Paint Correction & Polishing</h3>
-        <ul>
-          <li>Machine Polishing</li>
-          <li>One-Step Paint Correction</li>
-          <li>Multi-Step Paint Correction</li>
-          <li>Rubbing Compound Application</li>
-        </ul>
-      </div>
-      <div class="up-card">
-        <h3>Surface Prep & Restoration</h3>
-        <ul>
-          <li>Scratch Removal</li>
-          <li>Deep Paint Decontamination</li>
-          <li>Swirl Mark Removal</li>
-          <li>Paint Leveling</li>
-        </ul>
-      </div>
-      <div class="up-card">
-        <h3>Showroom Finishing 🌟</h3>
-        <ul>
-          <li>Ceramic Sealant</li>
-          <li>Advanced Paint Protection</li>
-          <li>Showroom Shining & Gloss</li>
-          <li>Mirror-like Finish</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<!-- PART 1 ENDS HERE -->
+  <section id="soon" class="dark">
+
+<div class="head">
+<div class="eyebrow">COMING SOON</div>
+<h2>Advanced <span class="gold">Paint Care</span></h2>
+<p>Professional paint correction, machine polishing and protection services launching soon.</p>
+</div>
+
+
+<div class="soon">
+
+<article>
+<small>COMING SOON</small>
+<h3>Rubbing Compound</h3>
+<p>Controlled compounding for paint refinement and correction.</p>
+</article>
+
+<article>
+<small>COMING SOON</small>
+<h3>Paint Correction</h3>
+<p>Professional correction for suitable paint defects and swirl marks.</p>
+</article>
+
+<article>
+<small>COMING SOON</small>
+<h3>Scratch Removal</h3>
+<p>Correction of suitable surface-level scratches after inspection.</p>
+</article>
+
+<article>
+<small>COMING SOON</small>
+<h3>Paint Decontamination</h3>
+<p>Deep removal of bonded contaminants from vehicle paint.</p>
+</article>
+
+<article>
+<small>COMING SOON</small>
+<h3>Ceramic Sealant</h3>
+<p>Gloss enhancing and hydrophobic paint protection.</p>
+</article>
+
+<article>
+<small>COMING SOON</small>
+<h3>Machine Polishing</h3>
+<p>Machine refinement for improved paint gloss and clarity.</p>
+</article>
+
+<article>
+<small>COMING SOON</small>
+<h3>One-Step Paint Correction</h3>
+<p>Single-stage enhancement for improved finish and gloss.</p>
+</article>
+
+<article>
+<small>COMING SOON</small>
+<h3>Multi-Step Paint Correction</h3>
+<p>Multi-stage refinement for more intensive paint correction.</p>
+</article>
+
+<article>
+<small>COMING SOON</small>
+<h3>Paint Protection</h3>
+<p>Professional protection solutions to help preserve the vehicle finish.</p>
+</article>
+
+<article class="featured">
+<small>COMING SOON</small>
+<h3>Showroom Finishing & Shining 🌟</h3>
+<p>Premium final refinement focused on depth, gloss and showroom-style finish.</p>
+</article>
+
+</div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="section-head center">
-      <div class="section-label">Booking</div>
-      <h2 class="section-title">Reserve Your <span class="highlight">Slot</span></h2>
-    </div>
-    <div style="max-width: 650px; margin: 0 auto;">
-      <form class="contact-form" onsubmit="return sendForm(event)">
-        <div class="form-group" style="margin-bottom: 16px;">
-          <input type="text" id="name" required placeholder="Full Name"/>
-        </div>
-        <div class="form-group" style="margin-bottom: 16px;">
-          <input type="tel" id="phone" required placeholder="Phone Number"/>
-        </div>
-        <div class="form-group" style="margin-bottom: 16px;">
-          <select id="package">
-            <option value="Complete Deep Cleaning (Ext + Int)">Complete Deep Cleaning (Ext + Int)</option>
-            <option value="Exterior Deep Cleaning Only">Exterior Deep Cleaning Only</option>
-            <option value="Interior Deep Cleaning Only">Interior Deep Cleaning Only</option>
-            <option value="Custom Add-ons / Enquiry">Custom Add-ons / Enquiry</option>
-          </select>
-        </div>
-        <div class="form-group" style="margin-bottom: 24px;">
-          <textarea id="message" placeholder="Car model, location, and preferred time..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send via WhatsApp</button>
-      </form>
-    </div>
-  </div>
+
+<section id="work">
+
+<div class="head">
+<div class="eyebrow">REAL WORK • REAL RESULTS</div>
+<h2>Our <span class="gold">Detailing Work</span></h2>
+<p>Actual doorstep car care work by Wash Aura in Raipur.</p>
+</div>
+
+
+<div class="gallery">
+
+<div class="photo">
+<img src="work1.jpg" alt="Wash Aura doorstep car detailing in Raipur" loading="lazy">
+<label>Doorstep Detailing</label>
+</div>
+
+<div class="photo">
+<img src="work2.jpg" alt="Wash Aura foam car wash in Raipur" loading="lazy">
+<label>Foam Wash</label>
+</div>
+
+<div class="photo">
+<img src="work3.jpg" alt="Professional exterior car cleaning in Raipur" loading="lazy">
+<label>Exterior Care</label>
+</div>
+
+<div class="photo">
+<img src="work4.jpg" alt="Professional doorstep car care" loading="lazy">
+<label>Professional Care</label>
+</div>
+
+<div class="photo">
+<img src="work5.jpg" alt="Deep car cleaning by Wash Aura" loading="lazy">
+<label>Deep Cleaning</label>
+</div>
+
+<div class="photo">
+<img src="work6.jpg" alt="Detailed vehicle finish by Wash Aura" loading="lazy">
+<label>Finished Result</label>
+</div>
+
+</div>
+
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="nav-logo" style="margin-bottom: 10px;">Wash<span>aura</span></div>
-        <p style="color: var(--muted); font-size: 14px;">Luxury doorstep car detailing in Raipur. Showroom finish without leaving your home.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <a href="#packages">Deep Cleaning</a>
-        <a href="#addons">Add-Ons</a>
-        <a href="#upcoming">Paint Correction (Soon)</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <a href="https://wa.me/918770814008" target="_blank">+91 87708 14008</a>
-        <a href="#">Raipur, Chhattisgarh</a>
-      </div>
-    </div>
-    <div style="text-align: center; border-top: 1px solid var(--border); padding-top: 20px; font-size: 13px; color: var(--muted);">
-      © 2025 Washaura. All rights reserved.
-    </div>
-  </div>
+
+<section id="reviews" class="dark">
+
+<div class="head">
+<div class="eyebrow">CUSTOMER TRUST</div>
+<h2>Google <span class="gold">Reviews</span></h2>
+<p>See what customers are saying about Wash Aura.</p>
+</div>
+
+
+<div class="googlebox">
+
+<div class="g">G</div>
+
+<div>
+<small>GOOGLE RATING</small>
+
+<div class="big-rating">
+5.0 <span class="stars">★★★★★</span>
+</div>
+
+<p>Based on 9 reviews at the time of this website update.</p>
+</div>
+
+</div>
+
+
+<div class="reviews">
+
+<article class="review">
+
+<div class="stars">★★★★★</div>
+
+<p>“Busy schedule mein doorstep service best option hai. Wash Aura ne impress kar diya. Har chhoti detail par dhyan diya gaya. Wheels aur glass bhi perfectly clean the.”</p>
+
+<b>Roshni Nayak</b>
+
+<small>Google Review</small>
+
+</article>
+
+
+<article class="review">
+
+<div class="stars">★★★★★</div>
+
+<p>“Satisfactory.”</p>
+
+<b>Lakshya Sahu</b>
+
+<small>Google Review</small>
+
+</article>
+
+
+<article class="review">
+
+<div class="stars">★★★★★</div>
+
+<p>“Bahut achhi service thi. Staff bhi bahut friendly the. Raipur me doorstep service ke liye bahut achha hai.”</p>
+
+<b>Subhan Mohammad</b>
+
+<small>Google Review</small>
+
+</article>
+
+</div>
+
+
+<div class="reviewbuttons">
+
+<a
+class="btn btn-gold"
+href="https://share.google/JQfHmCFxZoJJUfrGR"
+target="_blank"
+rel="noopener">
+Read Google Reviews
+</a>
+
+<a
+class="btn btn-line"
+href="https://share.google/JQfHmCFxZoJJUfrGR"
+target="_blank"
+rel="noopener">
+Rate Us on Google
+</a>
+
+</div>
+
+</section>
+
+
+<section id="location">
+
+<div class="location">
+
+
+<div>
+
+<div class="eyebrow">
+LOCATION & CONTACT
+</div>
+
+<h2>
+Find <span class="gold">Wash Aura</span>
+</h2>
+
+
+<h3>
+Wash Aura - Premium Doorstep Car Care
+</h3>
+
+
+<address>
+New Shanti Nagar,<br>
+Shankar Nagar,<br>
+Raipur, Chhattisgarh 492004
+</address>
+
+
+<p>
+Call / WhatsApp:
+<a
+class="gold"
+href="tel:+918770814008">
++91 87708 14008
+</a>
+</p>
+
+
+<div class="actions">
+
+<a
+class="btn btn-gold"
+href="https://share.google/JQfHmCFxZoJJUfrGR"
+target="_blank"
+rel="noopener">
+Open Google Maps
+</a>
+
+
+<a
+class="btn btn-line"
+href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20service">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<a
+class="map"
+href="https://share.google/JQfHmCFxZoJJUfrGR"
+target="_blank"
+rel="noopener">
+
+<div class="pin">⌖</div>
+
+<strong>
+New Shanti Nagar<br>
+Shankar Nagar, Raipur
+</strong>
+
+<small>
+Tap to open Google Maps →
+</small>
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<section class="cta dark">
+
+<div>
+
+<div class="eyebrow">
+BOOK YOUR DETAIL
+</div>
+
+<h2>
+Premium Car Care.<br>
+<span class="gold">
+At Your Doorstep.
+</span>
+</h2>
+
+
+<p>
+Send your car model, location and required service on WhatsApp for an exact quote.
+</p>
+
+
+<a
+class="btn btn-gold"
+href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%0A%0ACar%20Model%3A%20____%0ALocation%3A%20____%0AService%3A%20____%0APreferred%20Date%2FTime%3A%20____">
+
+Book on WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footergrid">
+
+
+<div>
+
+<h3>
+WASH <span>AURA</span>
+</h3>
+
+<b>
+Premium Doorstep Car Care
+</b>
+
+<p>
+Professional doorstep car detailing in Raipur, Chhattisgarh.
+</p>
+
+</div>
+
+
+<div>
+
+<b>
+SERVICES
+</b>
+
+<a href="#services">
+Deep Cleaning
+</a>
+
+<a href="#addons">
+Add-On Services
+</a>
+
+<a href="#soon">
+Advanced Paint Care
+</a>
+
+<a href="#work">
+Our Work
+</a>
+
+</div>
+
+
+<div>
+
+<b>
+CONTACT
+</b>
+
+<a href="tel:+918770814008">
++91 87708 14008
+</a>
+
+<a
+href="https://share.google/JQfHmCFxZoJJUfrGR"
+target="_blank"
+rel="noopener">
+Google Business Profile
+</a>
+
+<p>
+New Shanti Nagar,<br>
+Shankar Nagar,<br>
+Raipur, Chhattisgarh 492004
+</p>
+
+</div>
+
+</div>
+
+
+<div class="copy">
+
+© 2026 Wash Aura - Premium Doorstep Car Care.
+All rights reserved.
+
+</div>
+
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/918770814008?text=Hi%20Washaura%2C%20I%20want%20to%20book%20a%20detailing%20service" class="wa-float" target="_blank">💬</a>
+
+<a
+class="wa"
+href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20service"
+aria-label="Chat with Wash Aura on WhatsApp">
+💬
+</a>
+
 
 <script>
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
-  function closeMenu() { mobileMenu.classList.remove('open'); }
 
-  function sendForm(e) {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const pkg = document.getElementById('package').value;
-    const msg = document.getElementById('message').value;
-    const text = `Hi Washaura,%0A%0AName: ${name}%0APhone: ${phone}%0AService: ${pkg}%0AMessage: ${msg}`;
-    window.open(`https://wa.me/918770814008?text=${text}`, '_blank');
-    return false;
-  }
+const hamb =
+document.getElementById("hamb");
+
+const menu =
+document.getElementById("menu");
+
+
+hamb.addEventListener(
+"click",
+function(){
+
+menu.classList.toggle("open");
+
+}
+);
+
+
+document
+.querySelectorAll("#menu a")
+.forEach(function(link){
+
+link.addEventListener(
+"click",
+function(){
+
+menu.classList.remove("open");
+
+}
+);
+
+});
+
 </script>
+
+
 </body>
 </html>
