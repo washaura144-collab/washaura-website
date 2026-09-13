@@ -15,12 +15,12 @@
     /* PREMIUM BLACK & GOLD THEME */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --bg:       #0a0a0a;         /* Deep Matte Black */
-      --bg2:      #121212;         /* Charcoal Black */
+      --bg:       #0a0a0a;         
+      --bg2:      #121212;         
       --card:     #171717;
-      --border:   rgba(212, 175, 55, 0.2); /* Gold subtle border */
-      --primary:  #d4af37;         /* Luxury Gold */
-      --gold:     #e5c158;         /* Bright Gold */
+      --border:   rgba(212, 175, 55, 0.2); 
+      --primary:  #d4af37;         
+      --gold:     #e5c158;         
       --white:    #ffffff;
       --muted:    #9e9e9e;
       --r:        16px;
@@ -47,7 +47,7 @@
       font-weight: 800; line-height: 1.2; color: var(--white);
     }
     .section-sub {
-      margin-top: 14px; color: var(--muted); font-size: 16px; max-width: 650px;
+      margin-top: 14px; color: var(--muted); font-size: 16px; max-width: 700px;
     }
     .section-head { margin-bottom: 50px; }
     .section-head.center { text-align: center; }
@@ -57,7 +57,7 @@
     /* BUTTONS */
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 15px 32px; border-radius: 4px; /* Sharp premium edges */
+      padding: 15px 32px; border-radius: 4px; 
       font-weight: 700; font-size: 15px; font-family: 'Manrope', sans-serif;
       text-transform: uppercase; letter-spacing: 1px;
       cursor: pointer; border: none; transition: all .3s ease; white-space: nowrap;
@@ -72,12 +72,12 @@
     /* NAVBAR */
     .navbar {
       position: fixed; top: 0; left: 0; right: 0; z-index: 999;
-      background: rgba(10,10,10,0.9); backdrop-filter: blur(12px);
+      background: rgba(10,10,10,0.95); backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     .nav-inner {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 20px 24px; max-width: 1140px; margin: 0 auto;
+      padding: 16px 24px; max-width: 1140px; margin: 0 auto;
     }
     .nav-logo { font-family: 'Manrope', sans-serif; font-size: 24px; font-weight: 800; letter-spacing: 1px; }
     .nav-logo span { color: var(--primary); font-weight: 400; }
@@ -93,7 +93,7 @@
     /* HERO */
     .hero {
       min-height: 100vh; display: flex; align-items: center;
-      background: radial-gradient(circle at 70% 30%, rgba(212,175,55,0.08) 0%, transparent 50%), var(--bg);
+      background: radial-gradient(circle at 70% 30%, rgba(212,175,55,0.1) 0%, transparent 50%), var(--bg);
       padding: 140px 0 80px;
     }
     .hero-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; }
@@ -102,13 +102,13 @@
       font-size: 12px; font-weight: 600; color: var(--primary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px;
     }
     .hero-title { margin-bottom: 20px; text-transform: uppercase; letter-spacing: -1px; }
-    .hero-sub { margin-bottom: 36px; font-size: 18px; }
+    .hero-sub { margin-bottom: 36px; font-size: 18px; line-height: 1.8; }
     .hero-btns { display: flex; gap: 16px; margin-bottom: 40px; }
     .hero-trust { display: flex; gap: 30px; }
     .trust-chip { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
     .trust-chip span { color: var(--primary); font-size: 16px; }
 
-    /* SERVICES (REPLACING OLD CARDS WITH WIDE PREMIUM LISTS) */
+    /* PACKAGES */
     .packages { background: var(--bg2); }
     .pkg-container { display: flex; flex-direction: column; gap: 40px; }
     .pkg-wide-card {
@@ -121,9 +121,9 @@
     }
     .pkg-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px; }
     .pkg-title { font-family: 'Manrope', sans-serif; font-size: 28px; font-weight: 800; color: var(--white); }
-    .pkg-features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 24px; }
-    .pkg-features-grid li { font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 10px; }
-    .pkg-features-grid li::before { content: '✦'; color: var(--primary); font-size: 10px; }
+    .pkg-features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 24px; }
+    .pkg-features-grid li { font-size: 14.5px; color: var(--muted); display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+    .pkg-features-grid li::before { content: '✦'; color: var(--primary); font-size: 12px; margin-top: 2px; }
 
     /* PRICING BANNER */
     .pricing-banner {
@@ -137,36 +137,33 @@
     .price-car { font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
     .price-amt { font-family: 'Manrope', sans-serif; font-size: 22px; font-weight: 700; color: var(--white); }
 
-    /* A LA CARTE / ADD-ONS */
+    /* ADD ONS */
     .addons { background: var(--bg); }
-    .addon-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: x; row-gap: 20px; column-gap: 60px; }
-    .addon-item { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 8px; border-bottom: 1px dashed rgba(255,255,255,0.15); }
+    .addon-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 60px; margin-bottom: 40px; }
+    .addon-item { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 12px; border-bottom: 1px dashed rgba(255,255,255,0.15); }
     .addon-name { font-size: 15px; color: var(--white); font-weight: 500; }
     .addon-price { font-family: 'Manrope', sans-serif; font-size: 15px; font-weight: 700; color: var(--primary); }
+    
+    .more-addons-box { background: var(--card); padding: 30px; border: 1px solid var(--border); border-radius: 6px; }
+    .more-addons-box h4 { color: var(--primary); margin-bottom: 20px; font-family: 'Manrope', sans-serif; text-transform: uppercase; letter-spacing: 1px; font-size: 16px; }
+    .more-addons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .more-addons-grid li { font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+    .more-addons-grid li::before { content: '✓'; color: var(--primary); }
 
     /* UPCOMING */
     .upcoming { background: var(--bg2); border-top: 1px solid var(--border); }
     .upcoming-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .up-card { background: var(--bg); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 6px; text-align: center; transition: .3s; }
+    .up-card { background: var(--bg); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 6px; transition: .3s; }
     .up-card:hover { border-color: var(--primary); }
-    .up-card h3 { font-family: 'Manrope', sans-serif; font-size: 18px; color: var(--white); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;}
-    .up-card p { font-size: 13px; color: var(--muted); }
+    .up-card h3 { font-family: 'Manrope', sans-serif; font-size: 18px; color: var(--primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px;}
+    .up-card ul { list-style: none; }
+    .up-card ul li { font-size: 14px; color: var(--muted); margin-bottom: 10px; display: flex; gap: 8px; align-items: flex-start; }
+    .up-card ul li::before { content: '✦'; color: var(--gold); font-size: 10px; margin-top: 4px; }
 
-    /* REVIEWS & FAQ & CONTACT - Styled for Dark Theme */
-    .reviews { background: var(--bg); }
-    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .review-card { background: var(--card); padding: 30px; border: 1px solid rgba(255,255,255,0.05); border-radius: 6px; }
-    .stars { color: var(--primary); font-size: 16px; margin-bottom: 16px; }
-    .review-text { font-size: 14px; color: var(--muted); font-style: italic; margin-bottom: 24px; }
-    
-    .faq { background: var(--bg2); }
-    .faq-q { width: 100%; display: flex; justify-content: space-between; padding: 20px; background: var(--card); color: var(--white); font-weight: 600; cursor: pointer; border: 1px solid rgba(255,255,255,0.05); text-align: left; margin-bottom: 8px;}
-    .faq-a { display: none; padding: 0 20px 20px; color: var(--muted); font-size: 14px; background: var(--card); border: 1px solid rgba(255,255,255,0.05); border-top: none; }
-    .faq-a.open { display: block; margin-bottom: 8px; margin-top: -8px;}
-
+    /* CONTACT & FOOTER */
     .contact { background: var(--bg); }
     .form-group input, .form-group select, .form-group textarea {
-      width: 100%; background: var(--card); border: 1px solid rgba(255,255,255,0.1); padding: 14px; color: var(--white); font-family: inherit; margin-top: 6px;
+      width: 100%; background: var(--card); border: 1px solid rgba(255,255,255,0.1); padding: 16px; color: var(--white); font-family: inherit; margin-top: 6px; border-radius: 4px;
     }
     .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--primary); outline: none; }
     
@@ -175,30 +172,31 @@
     .footer-col h4 { color: var(--white); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
     .footer-col a { display: block; color: var(--muted); margin-bottom: 8px; font-size: 14px; }
 
-    .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 20px rgba(37,211,102,0.4); z-index: 999; }
+    .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 20px rgba(37,211,102,0.4); z-index: 999; text-decoration: none; color: white;}
 
     @media (max-width: 980px) {
       .hero-inner { grid-template-columns: 1fr; }
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
       .pkg-features-grid { grid-template-columns: 1fr; }
-      .addon-grid, .price-grid { grid-template-columns: 1fr 1fr; }
+      .addon-grid, .price-grid, .upcoming-grid { grid-template-columns: 1fr 1fr; }
+      .more-addons-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 600px) {
-      .addon-grid, .price-grid, .reviews-grid, .upcoming-grid, .footer-grid { grid-template-columns: 1fr; }
+      .addon-grid, .price-grid, .upcoming-grid, .footer-grid, .more-addons-grid { grid-template-columns: 1fr; }
       .pkg-wide-card { padding: 24px; }
     }
   </style>
 </head>
 <body>
-<!-- NAVBAR -->
+  <!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo">Wash<span>aura</span></a>
     <div class="nav-links">
       <a href="#packages">Deep Cleaning</a>
       <a href="#addons">Add-Ons</a>
-      <a href="#upcoming">Upcoming</a>
+      <a href="#upcoming">Coming Soon</a>
       <a href="#contact">Contact</a>
     </div>
     <div class="nav-cta">
@@ -211,7 +209,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#packages" onclick="closeMenu()">Deep Cleaning</a>
     <a href="#addons" onclick="closeMenu()">Add-Ons</a>
-    <a href="#upcoming" onclick="closeMenu()">Upcoming</a>
+    <a href="#upcoming" onclick="closeMenu()">Coming Soon</a>
     <a href="#contact" onclick="closeMenu()">Contact</a>
   </div>
 </nav>
@@ -222,13 +220,13 @@
     <div>
       <div class="hero-badge">Ultra-Premium Detailing · Raipur</div>
       <h1 class="hero-title">Showroom Finish.<br><span class="highlight">Delivered To You.</span></h1>
-      <p class="hero-sub">Experience luxury car care at your doorstep. From snow foam washes to expert interior restoration. No compromises, just perfection.</p>
+      <p class="hero-sub">Experience luxury car care at your doorstep. From snow foam washes and deep paint decontamination to interior restoration. No compromises, just perfection.</p>
       <div class="hero-btns">
         <a href="https://wa.me/918770814008?text=Hi%20Washaura%2C%20I%20want%20to%20book" class="btn btn-primary" target="_blank">Book on WhatsApp</a>
       </div>
       <div class="hero-trust">
-        <div class="trust-chip"><span>✦</span> Premium Products</div>
-        <div class="trust-chip"><span>✦</span> 100% Doorstep</div>
+        <div class="trust-chip"><span>✦</span> Expert Professionals</div>
+        <div class="trust-chip"><span>✦</span> 100% Doorstep Service</div>
       </div>
     </div>
   </div>
@@ -239,8 +237,8 @@
   <div class="container">
     <div class="section-head center">
       <div class="section-label">Signature Services</div>
-      <h2 class="section-title">Deep Cleaning <span class="highlight">Packages</span></h2>
-      <p class="section-sub">Comprehensive detailing inside and out. Select what your car needs.</p>
+      <h2 class="section-title">Complete Deep Cleaning <span class="highlight">Packages</span></h2>
+      <p class="section-sub">Comprehensive detailing inside and out. We touch every inch of your vehicle.</p>
     </div>
     
     <div class="pkg-container">
@@ -275,15 +273,23 @@
           <li>Complete Vacuum Cleaning</li>
           <li>Fabric Seat Shampoo</li>
           <li>Leather Cleaning & Conditioning</li>
-          <li>Carpet & Floor Mat Shampoo</li>
+          <li>Carpet Shampoo</li>
+          <li>Floor Mat Cleaning</li>
           <li>Dashboard Cleaning + UV Protection</li>
-          <li>Door Panel & Pocket Cleaning</li>
-          <li>Steering, Gear Knob & Handbrake Clean</li>
-          <li>AC Vent & Cup Holder Cleaning</li>
-          <li>Center Console & Switches Cleaning</li>
-          <li>Seat Rail & Seat Belt Cleaning</li>
+          <li>Door Panel Cleaning</li>
+          <li>Steering Wheel Cleaning</li>
+          <li>Gear Knob & Handbrake Cleaning</li>
+          <li>AC Vent Cleaning</li>
+          <li>Cup Holder Cleaning</li>
+          <li>Center Console Cleaning</li>
+          <li>Buttons & Switches Cleaning</li>
+          <li>Door Pocket Cleaning</li>
+          <li>Seat Rail Cleaning</li>
+          <li>Seat Belt Cleaning</li>
           <li>Sun Visor & Vanity Mirror Cleaning</li>
-          <li>Interior Glass & Boot (Dicky) Cleaning</li>
+          <li>Interior Glass Cleaning</li>
+          <li>Boot (Dicky) Cleaning</li>
+          <li>Plastic Dressing</li>
           <li>Odor Removal / Air Freshener</li>
         </ul>
       </div>
@@ -291,28 +297,28 @@
 
     <!-- PRICING BANNER -->
     <div class="pricing-banner">
-      <h3>Complete Deep Cleaning Pricing</h3>
-      <p style="color: var(--white); margin-bottom: 24px; font-size: 14px;">(Price varies based on car size & condition)</p>
+      <h3>Suggested Pricing</h3>
+      <p style="color: var(--muted); margin-bottom: 24px; font-size: 15px;">(Exterior + Interior Complete Package)</p>
       <div class="price-grid">
         <div class="price-item">
           <div class="price-car">Hatchback</div>
-          <div class="price-amt">₹1,299 – ₹1,699</div>
+          <div class="price-amt">₹1,299 – 1,699</div>
         </div>
         <div class="price-item">
           <div class="price-car">Sedan</div>
-          <div class="price-amt">₹1,499 – ₹1,999</div>
+          <div class="price-amt">₹1,499 – 1,999</div>
         </div>
         <div class="price-item">
           <div class="price-car">Compact SUV</div>
-          <div class="price-amt">₹1,799 – ₹2,299</div>
+          <div class="price-amt">₹1,799 – 2,299</div>
         </div>
         <div class="price-item">
           <div class="price-car">Full-Size SUV</div>
-          <div class="price-amt">₹2,299 – ₹3,499</div>
+          <div class="price-amt">₹2,299 – 3,499</div>
         </div>
       </div>
       <br>
-      <a href="https://wa.me/918770814008?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Deep%20Cleaning" class="btn btn-primary" target="_blank">Get Exact Quote</a>
+      <a href="https://wa.me/918770814008?text=Hi%2C%20I%20want%20to%20know%20the%20exact%20quote%20for%20Deep%20Cleaning" class="btn btn-primary" target="_blank" style="margin-top: 10px;">Get Exact Quote</a>
     </div>
   </div>
 </section>
@@ -322,83 +328,115 @@
   <div class="container">
     <div class="section-head center">
       <div class="section-label">Customize Your Detail</div>
-      <h2 class="section-title">A La Carte & <span class="highlight">Add-Ons</span></h2>
-      <p class="section-sub">Enhance your package with specialized restoration and protection services.</p>
+      <h2 class="section-title">A La Carte & <span class="highlight">Add-On Services</span></h2>
+      <p class="section-sub">Enhance your car's look with specific restoration and protection services.</p>
     </div>
     
     <div class="addon-grid">
       <div class="addon-item">
         <span class="addon-name">Spray Ceramic Protection</span>
-        <span class="addon-price">₹499–799</span>
+        <span class="addon-price">₹499 – 799</span>
       </div>
       <div class="addon-item">
         <span class="addon-name">Leather Conditioning</span>
-        <span class="addon-price">₹499–999</span>
+        <span class="addon-price">₹499 – 999</span>
       </div>
       <div class="addon-item">
         <span class="addon-name">Fabric Seat Protection</span>
-        <span class="addon-price">₹499–999</span>
+        <span class="addon-price">₹499 – 999</span>
       </div>
       <div class="addon-item">
-        <span class="addon-name">Headlight Polish (Oxidation)</span>
-        <span class="addon-price">₹499–999</span>
+        <span class="addon-name">Headlight Polish (Light Oxidation)</span>
+        <span class="addon-price">₹499 – 999</span>
       </div>
       <div class="addon-item">
-        <span class="addon-name">Engine Bay Dressing (Light Clean)</span>
-        <span class="addon-price">₹399–699</span>
+        <span class="addon-name">Engine Bay Dressing (After light clean)</span>
+        <span class="addon-price">₹399 – 699</span>
       </div>
       <div class="addon-item">
         <span class="addon-name">Odor Removal</span>
-        <span class="addon-price">₹299–599</span>
+        <span class="addon-price">₹299 – 599</span>
       </div>
       <div class="addon-item">
         <span class="addon-name">Glass Water Spot Removal (Mild)</span>
-        <span class="addon-price">₹299–599</span>
+        <span class="addon-price">₹299 – 599</span>
       </div>
       <div class="addon-item">
         <span class="addon-name">Plastic Trim Restoration</span>
-        <span class="addon-price">₹299–599</span>
+        <span class="addon-price">₹299 – 599</span>
       </div>
       <div class="addon-item">
-        <span class="addon-name">Rain Repellent (Windshield)</span>
-        <span class="addon-price">₹299–499</span>
+        <span class="addon-name">Rain Repellent (Front Windshield)</span>
+        <span class="addon-price">₹299 – 499</span>
       </div>
       <div class="addon-item">
         <span class="addon-name">Interior UV Protection</span>
-        <span class="addon-price">₹199–399</span>
+        <span class="addon-price">₹199 – 399</span>
       </div>
       <div class="addon-item">
         <span class="addon-name">Tyre & Trim Protection</span>
-        <span class="addon-price">₹199–399</span>
+        <span class="addon-price">₹199 – 399</span>
       </div>
       <div class="addon-item">
         <span class="addon-name">Door Jamb Detailing</span>
-        <span class="addon-price">₹199–399</span>
+        <span class="addon-price">₹199 – 399</span>
       </div>
+    </div>
+
+    <div class="more-addons-box">
+      <h4>More Custom Add-ons & Essentials</h4>
+      <ul class="more-addons-grid">
+        <li>Finishing Touch & Shining Polish</li>
+        <li>Clay Bar / Clay Mitt & Lubricant</li>
+        <li>Leather Restoration</li>
+        <li>Roof Lining Cleaning</li>
+        <li>Iron Remover Treatment</li>
+        <li>Tar Remover Treatment</li>
+        <li>Instant Gloss Wax</li>
+        <li>Glass Cleaner & Repellent</li>
+        <li>Trim & Tyre Dressing</li>
+        <li>Engine Bay Cleaning</li>
+      </ul>
+      <p style="margin-top: 16px; font-size: 13px; color: var(--muted); font-style: italic;">* Price for custom add-ons available upon inspection or WhatsApp request.</p>
     </div>
   </div>
 </section>
 
-<!-- UPCOMING -->
+<!-- UPCOMING SERVICES (PAINT CORRECTION) -->
 <section class="upcoming" id="upcoming">
   <div class="container">
     <div class="section-head center">
       <div class="section-label">Coming Soon</div>
-      <h2 class="section-title">Ultimate <span class="highlight">Correction</span></h2>
-      <p class="section-sub">Advanced machine polishing and heavy-duty paint protection launching soon.</p>
+      <h2 class="section-title">Ultimate <span class="highlight">Paint Correction</span></h2>
+      <p class="section-sub">Advanced machine polishing and heavy-duty paint protection launching soon in Raipur.</p>
     </div>
     <div class="upcoming-grid">
       <div class="up-card">
-        <h3>Paint Correction</h3>
-        <p>Rubbing Compound, Multi-Step & One-Step Machine Polishing.</p>
+        <h3>Paint Correction & Polishing</h3>
+        <ul>
+          <li>Machine Polishing</li>
+          <li>One-Step Paint Correction</li>
+          <li>Multi-Step Paint Correction</li>
+          <li>Rubbing Compound Application</li>
+        </ul>
       </div>
       <div class="up-card">
-        <h3>Scratch Removal</h3>
-        <p>Professional removal of swirls and surface-level scratches.</p>
+        <h3>Surface Prep & Restoration</h3>
+        <ul>
+          <li>Scratch Removal</li>
+          <li>Deep Paint Decontamination</li>
+          <li>Swirl Mark Removal</li>
+          <li>Paint Leveling</li>
+        </ul>
       </div>
       <div class="up-card">
-        <h3>Ceramic Sealants</h3>
-        <p>Showroom finishing, shining 🌟 and heavy paint decontamination.</p>
+        <h3>Showroom Finishing 🌟</h3>
+        <ul>
+          <li>Ceramic Sealant</li>
+          <li>Advanced Paint Protection</li>
+          <li>Showroom Shining & Gloss</li>
+          <li>Mirror-like Finish</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -411,7 +449,7 @@
       <div class="section-label">Booking</div>
       <h2 class="section-title">Reserve Your <span class="highlight">Slot</span></h2>
     </div>
-    <div style="max-width: 600px; margin: 0 auto;">
+    <div style="max-width: 650px; margin: 0 auto;">
       <form class="contact-form" onsubmit="return sendForm(event)">
         <div class="form-group" style="margin-bottom: 16px;">
           <input type="text" id="name" required placeholder="Full Name"/>
@@ -421,14 +459,14 @@
         </div>
         <div class="form-group" style="margin-bottom: 16px;">
           <select id="package">
-            <option value="Complete Deep Cleaning">Complete Deep Cleaning (Int + Ext)</option>
-            <option value="Exterior Only">Exterior Only</option>
-            <option value="Interior Only">Interior Only</option>
-            <option value="Looking for Add-ons">Looking for Add-ons</option>
+            <option value="Complete Deep Cleaning (Ext + Int)">Complete Deep Cleaning (Ext + Int)</option>
+            <option value="Exterior Deep Cleaning Only">Exterior Deep Cleaning Only</option>
+            <option value="Interior Deep Cleaning Only">Interior Deep Cleaning Only</option>
+            <option value="Custom Add-ons / Enquiry">Custom Add-ons / Enquiry</option>
           </select>
         </div>
         <div class="form-group" style="margin-bottom: 24px;">
-          <textarea id="message" placeholder="Car model and Location..."></textarea>
+          <textarea id="message" placeholder="Car model, location, and preferred time..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send via WhatsApp</button>
       </form>
@@ -462,7 +500,8 @@
   </div>
 </footer>
 
-<a href="https://wa.me/918770814008" class="wa-float" target="_blank">💬</a>
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/918770814008?text=Hi%20Washaura%2C%20I%20want%20to%20book%20a%20detailing%20service" class="wa-float" target="_blank">💬</a>
 
 <script>
   const hamburger = document.getElementById('hamburger');
