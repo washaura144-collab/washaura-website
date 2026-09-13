@@ -10,7 +10,301 @@
 <meta property="og:description" content="Premium doorstep car detailing in Raipur, Chhattisgarh.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+/* ===== PREMIUM VISIBILITY UPGRADE ===== */
 
+/* HERO BMW VIDEO */
+.hero-video{
+  display:block !important;
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center !important;
+  opacity:1 !important;
+  z-index:0 !important;
+}
+
+.hero-overlay{
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,.88) 0%,
+      rgba(0,0,0,.62) 45%,
+      rgba(0,0,0,.18) 78%,
+      rgba(0,0,0,.25) 100%
+    ) !important;
+}
+
+.hero-in{
+  position:relative !important;
+  z-index:3 !important;
+}
+
+/* SECTION SMALL GOLD HEADINGS */
+.eyebrow{
+  display:inline-block;
+  font-size:13px !important;
+  font-weight:800 !important;
+  letter-spacing:3px !important;
+  color:#ffd85a !important;
+  background:rgba(217,173,50,.10);
+  border:1px solid rgba(255,210,74,.28);
+  padding:7px 12px;
+  border-radius:999px;
+  margin-bottom:16px !important;
+}
+
+/* MAIN HEADINGS */
+.head h2{
+  font-size:clamp(32px,6vw,50px) !important;
+  font-weight:800 !important;
+}
+
+.head p{
+  font-size:15px !important;
+  line-height:1.8;
+}
+
+/* SERVICES CARDS */
+.card{
+  border:1px solid rgba(217,173,50,.32) !important;
+  border-radius:15px;
+  background:
+    radial-gradient(circle at top right,rgba(217,173,50,.08),transparent 40%),
+    linear-gradient(145deg,#171717,#0c0c0c) !important;
+  box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.card h3{
+  font-size:22px !important;
+  color:#ffd454;
+}
+
+.card li{
+  font-size:14px !important;
+  line-height:1.6;
+}
+
+/* ADD ON SERVICES */
+.addon{
+  padding:20px 5px !important;
+  font-size:14px !important;
+}
+
+.addon b{
+  color:#f5f5f5;
+}
+
+.addon span{
+  color:#ffd44e !important;
+  font-size:15px;
+}
+
+.more{
+  border-radius:15px;
+  background:
+    linear-gradient(135deg,rgba(217,173,50,.09),#101010) !important;
+}
+
+.more h3{
+  font-size:21px !important;
+  color:#ffd34c !important;
+}
+
+.chips span{
+  font-size:12px !important;
+  padding:11px 14px !important;
+  border-radius:999px;
+  border-color:rgba(217,173,50,.25) !important;
+  color:#ddd !important;
+}
+
+/* ===== COMING SOON PREMIUM CARDS ===== */
+
+#soon{
+  background:
+    radial-gradient(circle at 50% 0%,rgba(217,173,50,.10),transparent 32%),
+    #0d0d0d;
+}
+
+.soon{
+  gap:20px !important;
+}
+
+.soon article{
+  min-height:210px !important;
+  padding:30px !important;
+  border-radius:16px;
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(217,173,50,.25) !important;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(217,173,50,.12),transparent 42%),
+    linear-gradient(145deg,#151515,#080808) !important;
+  box-shadow:0 12px 35px rgba(0,0,0,.28);
+}
+
+.soon article::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:3px;
+  background:linear-gradient(90deg,#8d6810,#ffd85a,#8d6810);
+}
+
+.soon small{
+  display:inline-block;
+  font-size:10px !important;
+  letter-spacing:2px !important;
+  font-weight:800;
+  color:#090909 !important;
+  background:linear-gradient(135deg,#ffe071,#c5951d);
+  padding:6px 10px;
+  border-radius:999px;
+}
+
+.soon h3{
+  font-size:20px !important;
+  line-height:1.35;
+  color:#ffd44f !important;
+  margin:18px 0 12px !important;
+}
+
+.soon p{
+  color:#b8b8b8 !important;
+  font-size:14px !important;
+  line-height:1.75 !important;
+}
+
+/* SPECIAL SHOWROOM CARD */
+.soon .featured{
+  border:1px solid #e7b936 !important;
+  background:
+    radial-gradient(circle at top right,rgba(255,209,67,.22),transparent 45%),
+    linear-gradient(145deg,#211b0d,#090909) !important;
+  box-shadow:0 10px 45px rgba(217,173,50,.13);
+}
+
+/* PRICING */
+.pricegrid div{
+  border-radius:10px;
+  background:linear-gradient(145deg,#111,#080808) !important;
+}
+
+.pricegrid small{
+  font-size:10px !important;
+  color:#d3b85f !important;
+}
+
+.pricegrid b{
+  font-size:18px !important;
+  color:#fff;
+}
+
+/* REVIEWS */
+.review{
+  border-radius:14px;
+  border-color:rgba(217,173,50,.20) !important;
+}
+
+.review p{
+  font-size:13px !important;
+  line-height:1.75;
+}
+
+.review .stars{
+  font-size:17px;
+}
+
+/* BUTTONS */
+.btn{
+  border-radius:8px;
+  font-size:12px !important;
+  min-height:52px !important;
+}
+
+/* MOBILE READABILITY */
+@media(max-width:550px){
+
+  .hero{
+    min-height:92vh;
+  }
+
+  .hero-video{
+    object-position:center center !important;
+  }
+
+  .hero-overlay{
+    background:
+      linear-gradient(0deg,
+        rgba(0,0,0,.90) 0%,
+        rgba(0,0,0,.50) 52%,
+        rgba(0,0,0,.24) 100%
+      ) !important;
+  }
+
+  .hero h1{
+    font-size:42px !important;
+    line-height:1.06 !important;
+  }
+
+  .hero p{
+    font-size:15px !important;
+  }
+
+  .eyebrow{
+    font-size:11px !important;
+    letter-spacing:2px !important;
+  }
+
+  .head h2{
+    font-size:34px !important;
+  }
+
+  .head p{
+    font-size:14px !important;
+  }
+
+  .card h3{
+    font-size:20px !important;
+  }
+
+  .card li{
+    font-size:14px !important;
+    padding:10px 0 !important;
+  }
+
+  .addon{
+    font-size:13px !important;
+  }
+
+  .soon{
+    grid-template-columns:1fr !important;
+  }
+
+  .soon article{
+    min-height:auto !important;
+    padding:26px 22px !important;
+  }
+
+  .soon h3{
+    font-size:20px !important;
+  }
+
+  .soon p{
+    font-size:14px !important;
+  }
+
+  .pricegrid b{
+    font-size:17px !important;
+  }
+
+  .review p{
+    font-size:13px !important;
+  }
+}
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#060606;--bg2:#0d0d0d;--card:#121212;--gold:#d9ad32;--gold2:#f3d36b;--white:#fafafa;--muted:#999;--line:rgba(217,173,50,.22)}
