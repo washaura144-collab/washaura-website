@@ -1650,6 +1650,317 @@ font-size:14px
 font-size:11px
 }
 
+}/* ===== ADVANCED PAINT CARE V2 ===== */
+
+.paintPremium{
+background:
+radial-gradient(circle at 50% 0,rgba(169,130,85,.08),transparent 28%),
+#0b0a09
+}
+
+.paintServices{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:9px;
+max-width:900px;
+margin:-10px auto 38px
+}
+
+.paintServices span{
+padding:9px 13px;
+border:1px solid var(--line);
+background:#11100e;
+color:#bdb5ab;
+font-size:12px;
+font-weight:700
+}
+
+.paintPackages{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px
+}
+
+.paintPackage{
+position:relative;
+padding:30px;
+border:1px solid var(--line);
+background:
+linear-gradient(145deg,#151310,#0c0b09)
+}
+
+.paintPackage.featuredPackage{
+border-color:rgba(197,164,119,.42);
+background:
+radial-gradient(circle at 100% 0,rgba(169,130,85,.13),transparent 38%),
+#12100d
+}
+
+.recommended{
+position:absolute;
+top:0;
+right:0;
+padding:7px 12px;
+background:#ad895e;
+color:#080604;
+font-size:9px;
+font-weight:800;
+letter-spacing:1px
+}
+
+.paintPackageTop{
+display:flex;
+justify-content:space-between;
+gap:20px;
+align-items:flex-start
+}
+
+.packageNumber{
+display:block;
+font-family:"Cormorant Garamond",serif;
+font-size:46px;
+line-height:.8;
+color:rgba(197,164,119,.35)
+}
+
+.packageType{
+margin-top:15px;
+color:var(--bronze2);
+font-size:11px;
+font-weight:800;
+letter-spacing:1px
+}
+
+.paintPackage h3{
+margin-top:7px;
+font-family:"Cormorant Garamond",serif;
+font-size:29px;
+line-height:1;
+font-weight:600
+}
+
+.packagePrice{
+flex:0 0 auto;
+text-align:right
+}
+
+.packagePrice small{
+display:block;
+color:#77716a;
+font-size:8px;
+font-weight:800;
+letter-spacing:.7px
+}
+
+.packagePrice strong{
+display:block;
+margin-top:4px;
+color:var(--bronze2);
+font-size:17px
+}
+
+.packageIntro{
+min-height:48px;
+margin:20px 0 15px;
+color:#9e978f;
+font-size:13px
+}
+
+.packageList{
+margin-bottom:25px
+}
+
+.packageList li{
+position:relative;
+padding:9px 0 9px 19px;
+border-bottom:1px solid var(--line);
+color:#bbb4ac;
+font-size:13px
+}
+
+.packageList li:before{
+content:"✓";
+position:absolute;
+left:0;
+color:var(--bronze2);
+font-size:10px
+}
+
+.paintExtras{
+margin-top:20px;
+padding:29px;
+border:1px solid var(--line);
+background:#0e0d0b
+}
+
+.paintExtraHead .kicker{
+justify-content:flex-start;
+margin-bottom:8px
+}
+
+.paintExtraHead h3{
+font-family:"Cormorant Garamond",serif;
+font-size:30px
+}
+
+.paintChips{
+display:flex;
+flex-wrap:wrap;
+gap:9px;
+margin-top:20px
+}
+
+.paintChips span{
+padding:10px 13px;
+border:1px solid var(--line);
+color:#bcb5ad;
+font-size:12px
+}
+
+.ceramicSoon{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+margin-top:14px;
+padding:28px;
+border:1px solid rgba(197,164,119,.22);
+background:
+linear-gradient(120deg,rgba(169,130,85,.08),transparent),
+#0d0c0a
+}
+
+.ceramicSoon>div{
+max-width:700px
+}
+
+.comingLabel{
+color:var(--bronze2);
+font-size:13px;
+font-weight:800;
+letter-spacing:1px
+}
+
+.ceramicSoon h3{
+margin:7px 0;
+font-family:"Cormorant Garamond",serif;
+font-size:30px
+}
+
+.ceramicSoon p{
+color:#938c84;
+font-size:13px
+}
+
+.paintDisclaimer{
+max-width:830px;
+margin:25px auto 0;
+color:#77716b;
+font-size:11px;
+line-height:1.7;
+text-align:center
+}
+
+@media(max-width:900px){
+.paintPackages{
+grid-template-columns:1fr
+}
+.packageIntro{
+min-height:0
+}
+}
+
+@media(max-width:600px){
+
+.paintServices{
+justify-content:flex-start;
+margin-bottom:28px
+}
+
+.paintServices span{
+font-size:13px
+}
+
+.paintPackage{
+padding:27px 21px
+}
+
+.paintPackageTop{
+display:block
+}
+
+.packageNumber{
+font-size:48px
+}
+
+.packageType{
+font-size:13px
+}
+
+.paintPackage h3{
+font-size:32px
+}
+
+.packagePrice{
+margin-top:18px;
+text-align:left
+}
+
+.packagePrice small{
+font-size:10px
+}
+
+.packagePrice strong{
+font-size:20px
+}
+
+.packageIntro{
+font-size:15px;
+line-height:1.7
+}
+
+.packageList li{
+font-size:14px;
+padding-top:11px;
+padding-bottom:11px
+}
+
+.paintExtras{
+padding:25px 20px
+}
+
+.paintExtraHead h3{
+font-size:31px
+}
+
+.paintChips span{
+font-size:13px
+}
+
+.ceramicSoon{
+display:block;
+padding:25px 20px
+}
+
+.comingLabel{
+font-size:14px
+}
+
+.ceramicSoon h3{
+font-size:32px
+}
+
+.ceramicSoon p{
+font-size:14px;
+line-height:1.7;
+margin-bottom:20px
+}
+
+.paintDisclaimer{
+font-size:12px
+}
+
 }
 </style>
 
