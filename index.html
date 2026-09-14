@@ -1180,7 +1180,477 @@ height:55px
 html{scroll-behavior:auto}
 *{transition:none!important}
 }
+/* ===== WASH AURA FINAL MOBILE POLISH ===== */
 
+/* Stronger readable premium labels */
+.kicker{
+font-size:15px;
+font-weight:800;
+letter-spacing:.9px;
+color:#c9a979;
+gap:12px
+}
+
+.kicker:before{
+width:30px;
+height:2px;
+background:#a98255
+}
+
+/* Better paragraph readability */
+.sectionHead p{
+font-size:16px;
+line-height:1.75;
+color:#b1aaa1
+}
+
+/* Softer luxury headings */
+.sectionHead h2{
+color:#f3eee7
+}
+
+.sectionHead h2 em{
+color:#c6a576
+}
+
+/* More premium buttons */
+.btn{
+min-height:55px;
+font-size:12px;
+font-weight:800;
+letter-spacing:.7px;
+border-radius:4px
+}
+
+.btnBronze{
+background:linear-gradient(
+135deg,
+#d2b487 0%,
+#b38b5d 52%,
+#987044 100%
+);
+color:#090705;
+box-shadow:
+0 7px 24px rgba(169,130,85,.14),
+inset 0 1px rgba(255,255,255,.18)
+}
+
+/* Stronger hero readability */
+.heroShade{
+background:
+linear-gradient(
+90deg,
+rgba(3,3,3,.94) 0%,
+rgba(3,3,3,.74) 48%,
+rgba(3,3,3,.28) 100%
+),
+linear-gradient(
+0deg,
+#060504 0%,
+rgba(6,5,4,.4) 30%,
+transparent 58%
+)
+}
+
+.heroText{
+color:#d0c9c0;
+line-height:1.75
+}
+
+/* Deep cleaning image refinement */
+.featureImage img{
+object-position:center 65%;
+filter:
+brightness(.92)
+contrast(1.14)
+saturate(.84)
+}
+
+/* Service readability */
+.servicePanel h3{
+font-size:19px;
+line-height:1.35
+}
+
+.servicePanel .sub{
+font-size:13px;
+color:#c6a576
+}
+
+.serviceList li{
+font-size:15px;
+line-height:1.55;
+color:#c0b9b0
+}
+
+/* Prices easier to read */
+.priceRow span{
+font-size:15px
+}
+
+.priceRow strong{
+font-size:18px;
+color:#c9a979
+}
+
+.priceNote{
+font-size:12px;
+line-height:1.65
+}
+
+/* Add-ons readability */
+.addon strong{
+font-size:15px;
+line-height:1.45
+}
+
+.addon span{
+font-size:15px;
+color:#c9a979
+}
+
+/* Paint cards */
+.paintCard h3{
+font-size:27px
+}
+
+.paintCard p{
+font-size:14px;
+line-height:1.65;
+color:#a9a29a
+}
+
+.soon{
+font-size:13px;
+color:#c9a979
+}
+
+/* Gallery caption */
+.photo span{
+font-size:12px;
+letter-spacing:.15px
+}
+
+/* Video information */
+.videoInfo strong{
+font-size:15px
+}
+
+.videoInfo small{
+font-size:12px
+}
+
+/* Reviews readability */
+.ratingCard small{
+font-size:12px
+}
+
+.review p{
+font-size:15px;
+line-height:1.75
+}
+
+.review strong{
+font-size:14px
+}
+
+.review small{
+font-size:11px
+}
+
+/* Location */
+.locationCopy h3{
+font-size:16px
+}
+
+address{
+font-size:15px;
+line-height:1.7
+}
+
+.contact{
+font-size:15px
+}
+
+/* Footer */
+.footerCol b{
+font-size:12px
+}
+
+.footerCol p,
+.footerCol a{
+font-size:13px;
+line-height:1.7
+}
+
+.copy{
+font-size:11px
+}
+
+
+/* ===== MOBILE FINAL REFINEMENT ===== */
+
+@media(max-width:600px){
+
+section{
+padding:82px 0
+}
+
+/* All important labels clearly visible */
+.kicker{
+font-size:14px;
+line-height:1.4;
+font-weight:800;
+letter-spacing:.65px;
+margin-bottom:17px
+}
+
+.kicker:before{
+width:24px;
+height:2px
+}
+
+/* Main section titles */
+.sectionHead h2{
+font-size:42px;
+line-height:.98
+}
+
+.sectionHead p{
+font-size:15px;
+line-height:1.75
+}
+
+/* Hero */
+.hero{
+min-height:90svh
+}
+
+.hero h1{
+font-size:clamp(47px,14vw,62px);
+line-height:.91
+}
+
+.heroText{
+font-size:16px;
+line-height:1.72
+}
+
+.heroProof small{
+font-size:11px
+}
+
+/* Hero video needs stronger lower-left contrast */
+.heroShade{
+background:
+linear-gradient(
+0deg,
+rgba(5,4,3,.97) 0%,
+rgba(5,4,3,.75) 48%,
+rgba(5,4,3,.34) 100%
+),
+linear-gradient(
+90deg,
+rgba(0,0,0,.48),
+rgba(0,0,0,.08)
+)
+}
+
+/* Trust information */
+.trustItem{
+font-size:12px;
+line-height:1.4
+}
+
+/* Grey car better crop */
+.featureImage{
+height:390px
+}
+
+.featureImage img{
+object-position:center 64%;
+filter:
+brightness(.94)
+contrast(1.13)
+saturate(.84)
+}
+
+.featureCopy{
+padding:29px 22px
+}
+
+.featureCopy h3{
+font-size:36px
+}
+
+.featureCopy p{
+font-size:15px;
+line-height:1.7
+}
+
+/* Exterior / Interior */
+.servicePanel{
+padding:27px 21px
+}
+
+.servicePanel h3{
+font-size:20px
+}
+
+.servicePanel .sub{
+font-size:13px
+}
+
+.serviceList li{
+font-size:15px;
+padding-top:11px;
+padding-bottom:11px
+}
+
+.detailsToggle{
+font-size:13px;
+min-height:44px;
+align-items:center
+}
+
+/* Pricing */
+.priceWrap{
+padding:30px 20px
+}
+
+.priceTitle h3{
+font-size:32px
+}
+
+.priceRow{
+padding:17px 2px
+}
+
+.priceRow span{
+font-size:14px
+}
+
+.priceRow strong{
+font-size:17px
+}
+
+/* Add-ons */
+.addon{
+padding:19px 2px
+}
+
+.addon strong{
+font-size:14px
+}
+
+.addon span{
+font-size:14px
+}
+
+/* Force paint care to clean single column */
+.paintGrid{
+display:grid!important;
+grid-template-columns:1fr!important;
+gap:12px!important
+}
+
+.paintCard{
+width:100%;
+min-height:190px;
+padding:25px
+}
+
+.paintNo{
+font-size:45px
+}
+
+.paintCard h3{
+font-size:29px;
+margin-top:12px
+}
+
+.paintCard p{
+font-size:15px
+}
+
+.soon{
+font-size:13px
+}
+
+/* Portfolio */
+.gallery{
+grid-template-columns:1fr 1fr;
+grid-auto-rows:240px
+}
+
+.photo span{
+font-size:11px
+}
+
+/* Videos */
+.videoInfo strong{
+font-size:15px
+}
+
+.videoInfo small{
+font-size:12px
+}
+
+/* Reviews */
+.review{
+padding:24px 21px
+}
+
+.review p{
+font-size:15px
+}
+
+.review strong{
+font-size:14px
+}
+
+/* Location */
+.locationCopy h2{
+font-size:47px
+}
+
+.locationCopy h3,
+address,
+.contact{
+font-size:15px
+}
+
+/* Final CTA */
+.cta h2{
+font-size:49px
+}
+
+.cta p{
+font-size:15px;
+line-height:1.75
+}
+
+/* Buttons easier to tap */
+.btn{
+min-height:56px;
+font-size:12px
+}
+
+/* Footer no longer tiny */
+.footerCol b{
+font-size:12px
+}
+
+.footerCol p,
+.footerCol a{
+font-size:14px
+}
+
+.copy{
+font-size:11px
+}
+
+}
 </style>
 
 
