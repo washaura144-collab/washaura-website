@@ -1961,6 +1961,173 @@ margin-bottom:20px
 font-size:12px
 }
 
+} /* ===== PAINT PACKAGE LUXURY CARDS ===== */
+
+.paintPackages{
+gap:18px
+}
+
+.paintPackage{
+position:relative;
+overflow:hidden;
+border:1px solid rgba(197,164,119,.32);
+border-radius:10px;
+background:
+radial-gradient(
+circle at 90% 0%,
+rgba(169,130,85,.11),
+transparent 34%
+),
+linear-gradient(
+145deg,
+#17140f 0%,
+#0e0d0a 45%,
+#090908 100%
+);
+box-shadow:
+0 16px 45px rgba(0,0,0,.28),
+inset 0 1px 0 rgba(255,255,255,.035);
+transition:
+transform .3s ease,
+border-color .3s ease,
+box-shadow .3s ease
+}
+
+.paintPackage:before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+height:3px;
+background:linear-gradient(
+90deg,
+transparent,
+#9b7449 25%,
+#d0ad78 50%,
+#9b7449 75%,
+transparent
+);
+opacity:.75
+}
+
+.paintPackage:hover{
+transform:translateY(-5px);
+border-color:rgba(197,164,119,.55);
+box-shadow:
+0 22px 55px rgba(0,0,0,.4),
+0 0 25px rgba(169,130,85,.06)
+}
+
+/* Package numbers */
+
+.packageNumber{
+color:#b58b5c;
+text-shadow:0 0 20px rgba(169,130,85,.12)
+}
+
+/* Package category */
+
+.packageType{
+color:#c9a979
+}
+
+/* Package title */
+
+.paintPackage h3{
+color:#f2ede5
+}
+
+/* Prices */
+
+.packagePrice strong{
+color:#d2ae78
+}
+
+/* Coming-soon status */
+
+.packageStatus{
+display:inline-flex;
+width:max-content;
+margin-top:10px;
+padding:6px 10px;
+border:1px solid rgba(197,164,119,.3);
+border-radius:3px;
+background:rgba(169,130,85,.08);
+color:#d0ad78;
+font-size:11px;
+font-weight:800;
+letter-spacing:.8px
+}
+
+/* Middle card gets only a subtle premium emphasis */
+
+.paintPackage.featuredPackage{
+border-color:rgba(208,173,120,.55);
+background:
+radial-gradient(
+circle at 90% 0%,
+rgba(169,130,85,.17),
+transparent 38%
+),
+linear-gradient(
+145deg,
+#1a160f,
+#100e0a 48%,
+#090908
+);
+box-shadow:
+0 18px 55px rgba(0,0,0,.4),
+0 0 30px rgba(169,130,85,.07)
+}
+
+/* Badge */
+
+.recommended{
+background:linear-gradient(
+135deg,
+#d0ad78,
+#a77c4b
+);
+color:#090705;
+font-size:10px;
+font-weight:900;
+letter-spacing:1px
+}
+
+/* Consistent buttons in all 3 cards */
+
+.paintPackage .btn{
+width:100%;
+margin-top:auto;
+border-color:rgba(197,164,119,.32)
+}
+
+/* Better separation between list items */
+
+.packageList li{
+border-bottom:1px solid rgba(255,255,255,.065)
+}
+
+@media(max-width:600px){
+
+.paintPackages{
+gap:18px
+}
+
+.paintPackage{
+border-radius:8px;
+padding:28px 22px
+}
+
+.paintPackage:before{
+height:2px
+}
+
+.packageStatus{
+font-size:12px
+}
+
 }
 </style>
 
