@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Wash Aura Premium — Doorstep Car Care</title>
+<meta name="description" content="Wash Aura offers premium doorstep car care, deep cleaning and paint protection in Raipur, Chhattisgarh. Real 5.0 rated professional car care at your home.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#06080d">
+
+<meta property="og:title" content="Wash Aura Premium — Doorstep Car Care">
+<meta property="og:description" content="Professional car deep cleaning, interior sanitization and paint care delivered to your doorstep in Raipur.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://washaura144-collab.github.io/washaura-website/">
+<meta property="og:url" content="https://washaura144-collab.github.io/washaura-website/">
+<meta property="og:image" content="https://washaura144-collab.github.io/washaura-website/hero-image.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="hero-image.webp" type="image/webp" fetchpriority="high">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Wash Aura - Premium Doorstep Car Care",
+  "description": "Premium doorstep car care, deep cleaning and paint protection in Raipur, Chhattisgarh.",
+  "telephone": "+91-8770814008",
+  "email": "washaura144@gmail.com",
+  "url": "https://washaura144-collab.github.io/washaura-website/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "New Shanti Nagar, Shankar Nagar",
+    "addressLocality": "Raipur",
+    "addressRegion": "Chhattisgarh",
+    "postalCode": "492004",
+    "addressCountry": "IN"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Raipur"
+  },
+  "sameAs": [
+    "https://share.google/JQfHmCFxZoJJUfrGR"
+  ]
+}
+
+// Lightweight Scroll Reveal
+if ('IntersectionObserver' in window) {
+  const revealElements = document.querySelectorAll('.service-card, .gallery-card, .review-card, .addon-card, .paint-card, .before-after-wrap, .video-card');
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  revealElements.forEach(el => {
+    el.classList.add('reveal');
+    revealObserver.observe(el);
+  });
+}
+
+</script>
+
+<style>
+:root {
+  --bg-dark: #06080d;
+  --bg-card: #0c1018;
+  --bg-card-alt: #0f1420;
+  --blue-primary: #0088ff;
+  --blue-glow: #00d2ff;
+  --blue-gradient: linear-gradient(135deg, #38bdf8 0%, #0088ff 100%);
+  --gold: #d4af37;
+  --gold-light: #fbbf24;
+  --gold-gradient: linear-gradient(135deg, #fbbf24 0%, #d4af37 100%);
+  --text-white: #ffffff;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-blue: rgba(56, 189, 248, 0.25);
+  --border-gold: rgba(212, 175, 55, 0.35);
+  --max-w: 1200px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #05070c;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 136, 255, 0.14) 0%, transparent 45%),
+    radial-gradient(circle at 90% 25%, rgba(0, 210, 255, 0.08) 0%, transparent 35%),
+    radial-gradient(circle at 10% 60%, rgba(0, 102, 255, 0.09) 0%, transparent 40%),
+    radial-gradient(circle at 50% 85%, rgba(0, 180, 255, 0.07) 0%, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+img, video { display: block; max-width: 100%; }
+
+.container {
+  width: min(var(--max-w), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+/* TYPOGRAPHY & GRADIENTS */
+.font-serif { font-family: 'Cormorant Garamond', serif; }
+.gradient-blue {
+  background: var(--blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-shadow: 0 0 35px rgba(0, 162, 255, 0.4);
+}
+.gradient-gold {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.kicker::before, .kicker::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background: var(--gold);
+}
+
+/* NAVBAR */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(6, 8, 13, 0.9);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 14px 0;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-logo {
+  display: flex;
+  flex-direction: column;
+}
+.brand-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 1;
+}
+.brand-sub {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: var(--blue-glow);
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+.nav-links {
+  display: none;
+  align-items: center;
+  gap: 24px;
+}
+.nav-links a {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #cbd5e1;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--blue-glow); }
+.btn-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 1px solid var(--border-gold);
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--gold-light);
+  transition: all 0.25s;
+}
+.btn-nav:hover {
+  background: var(--gold);
+  color: #000;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+@media (min-width: 960px) {
+  .nav-links { display: flex; }
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  min-height: 94vh;
+  padding: 120px 0 60px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  z-index: 1;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(90deg, rgba(6, 8, 13, 0.96) 0%, rgba(6, 8, 13, 0.78) 55%, rgba(6, 8, 13, 0.3) 100%),
+    linear-gradient(0deg, #06080d 0%, transparent 35%);
+  z-index: 2;
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 680px;
+}
+.hero h1 {
+  font-size: clamp(38px, 7.5vw, 72px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin: 12px 0 20px;
+  text-transform: uppercase;
+}
+.hero-sub {
+  font-size: clamp(14px, 2.5vw, 17px);
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 560px;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--blue-gradient);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 25px rgba(0, 136, 255, 0.45);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 35px rgba(0, 210, 255, 0.6);
+}
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  transition: background 0.2s;
+}
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* FLOATING LUXURY TRUST STRIP (REAL GENUINE NUMBERS) */
+.trust-strip {
+  position: relative;
+  z-index: 10;
+  margin-top: -30px;
+  margin-bottom: 60px;
+}
+.trust-card {
+  background: rgba(12, 16, 24, 0.94);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  padding: 22px 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.trust-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--gold-light);
+  flex-shrink: 0;
+}
+.trust-info strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+.trust-info small {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.trust-highlight strong {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--gold-light);
+  line-height: 1;
+}
+
+/* SECTION COMMONS */
+section { padding: 80px 0; }
+.section-alt { background: #080b12; }
+.section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 50px;
+}
+.section-header h2 {
+  font-size: clamp(28px, 4.5vw, 42px);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.section-header p {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+/* SERVICES CARDS */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.service-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-blue);
+  box-shadow: 0 15px 35px rgba(0, 136, 255, 0.15);
+}
+.service-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.service-body {
+  padding: 26px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.watermark-num {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 64px;
+  font-weight: 900;
+  font-family: 'Cormorant Garamond', serif;
+  color: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+  line-height: 1;
+}
+.service-price {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+.service-price span {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.service-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.service-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+.service-features {
+  list-style: none;
+  margin-bottom: 24px;
+  flex: 1;
+}
+.service-features li {
+  font-size: 13px;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.service-features li::before {
+  content: "✓";
+  color: var(--blue-glow);
+  font-weight: 800;
+  font-size: 12px;
+}
+.service-btn {
+  display: block;
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--border-gold);
+  background: rgba(212, 175, 55, 0.08);
+  color: var(--gold-light);
+  transition: all 0.2s;
+}
+.service-btn:hover {
+  background: var(--gold);
+  color: #000;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
+}
+
+/* BEFORE & AFTER SLIDER */
+.before-after-wrap {
+  background: var(--bg-card);
+  border: 1px solid var(--border-blue);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  max-width: 950px;
+  margin: 0 auto;
+}
+.ba-container {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  user-select: none;
+}
+@media (min-width: 768px) {
+  .ba-container { height: 480px; }
+}
+.ba-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ba-before {
+  z-index: 1;
+  filter: contrast(0.8) brightness(0.65) saturate(0.4);
+}
+.ba-after {
+  z-index: 2;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  transition: clip-path 0.05s ease-out;
+}
+.ba-badge {
+  position: absolute;
+  top: 20px;
+  z-index: 5;
+  background: rgba(6, 8, 13, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.badge-before { left: 20px; color: #f87171; border: 1px solid rgba(248, 113, 113, 0.3); }
+.badge-after { right: 20px; color: var(--blue-glow); border: 1px solid var(--border-blue); }
+
+.ba-slider-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: #fff;
+  z-index: 6;
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.8);
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+.ba-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--blue-gradient);
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 136, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.ba-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+/* ADD-ONS SECTION */
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+.addon-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.addon-card:hover {
+  border-color: var(--border-blue);
+  transform: translateY(-2px);
+}
+.addon-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(0, 136, 255, 0.1);
+  border: 1px solid var(--border-blue);
+  color: var(--blue-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.addon-card strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+.addon-card small {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* PAINT CARE (COMING SOON / UPCOMING) */
+.paint-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+.paint-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 28px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.paint-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: rgba(251, 191, 36, 0.15);
+  color: var(--gold-light);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  margin-bottom: 12px;
+}
+
+/* VIDEOS IN ACTION */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.video-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.video-card video {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  background: #000;
+}
+.video-info {
+  padding: 16px 20px;
+}
+.video-info strong {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+}
+.video-info small {
+  font-size: 11px;
+  color: var(--blue-glow);
+}
+
+/* GALLERY / FEATURED CARS */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.gallery-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #111;
+  aspect-ratio: 4/3;
+  border: 1px solid var(--border-subtle);
+  transition: transform 0.3s, border-color 0.3s;
+}
+.gallery-card:hover {
+  transform: scale(1.02);
+  border-color: var(--border-blue);
+}
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 16px 12px;
+  background: linear-gradient(0deg, rgba(6, 8, 13, 0.95) 0%, transparent 100%);
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* REVIEWS (REAL 5.0 RATINGS) */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.review-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 26px;
+  transition: border-color 0.25s;
+}
+.review-card:hover { border-color: var(--border-gold); }
+.stars { color: var(--gold-light); font-size: 15px; margin-bottom: 12px; }
+.review-text { font-size: 14px; color: #cbd5e1; margin-bottom: 18px; line-height: 1.6; }
+.reviewer-info strong { display: block; font-size: 14px; color: #fff; }
+.reviewer-info small { font-size: 11px; color: var(--blue-glow); }
+
+/* LOCATION / COVERAGE */
+.location-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.location-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.location-tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+/* FOOTER */
+footer {
+  background: #030508;
+  border-top: 1px solid var(--border-subtle);
+  padding: 60px 0 30px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* FLOATING WHATSAPP BUTTON */
+.fab-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+.fab-whatsapp:hover { transform: scale(1.1); }
+
+/* METALLIC SHIMMER & LUXURY GLASS */
+.shimmer-btn {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  transform: rotate(25deg) translateY(-100%);
+  animation: shimmerSweep 4.5s infinite;
+}
+@keyframes shimmerSweep {
+  0% { transform: rotate(25deg) translateY(-100%); }
+  22%, 100% { transform: rotate(25deg) translateY(100%); }
+}
+
+/* MOBILE STICKY CONVERSION BAR */
+.mobile-sticky-bar {
+  display: none;
+  position: fixed;
+  bottom: 14px;
+  left: 14px;
+  right: 14px;
+  z-index: 999;
+  background: rgba(10, 14, 22, 0.94);
+  border: 1px solid var(--border-gold);
+  border-radius: 40px;
+  padding: 8px 14px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.2);
+  align-items: center;
+  justify-content: space-between;
+}
+.sticky-bar-text {
+  display: flex;
+  flex-direction: column;
+}
+.sticky-bar-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.sticky-bar-sub {
+  font-size: 10px;
+  color: var(--gold-light);
+  font-weight: 600;
+}
+.sticky-bar-btn {
+  background: var(--blue-gradient);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 8px 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 136, 255, 0.4);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+@media (max-width: 768px) {
+  .mobile-sticky-bar { display: flex; }
+  .fab-whatsapp { bottom: 82px; }
+}
+
+/* SMOOTH SCROLL REVEAL ANIMATIONS */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* STUDIO LUXURY GLASSMORPHISM */
+.service-card, .paint-card, .review-card, .trust-card, .addon-card {
+  background: rgba(10, 15, 24, 0.85) !important;
+  border: 1px solid rgba(56, 189, 248, 0.2) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+.service-card:hover, .paint-card:hover {
+  border-color: rgba(0, 210, 255, 0.5) !important;
+  box-shadow: 0 15px 45px rgba(0, 136, 255, 0.25), inset 0 0 20px rgba(0, 210, 255, 0.1) !important;
+}
+
+/* CINEMATIC PHOTO BLEND (Makes real car photos match the dark studio theme) */
+.service-img, .gallery-card img, .video-card video {
+  filter: brightness(0.9) contrast(1.15) saturate(1.02);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-card {
+  position: relative;
+  background: #06080d;
+}
+
+.gallery-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(5, 7, 12, 0.95) 0%, rgba(5, 7, 12, 0.2) 50%, rgba(5, 7, 12, 0.4) 100%);
+  pointer-events: none;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.06);
+  filter: brightness(1) contrast(1.18) saturate(1.1);
+}
+
+.gallery-caption {
+  z-index: 5;
+}
+
+/* ULTRA NEON SAPPHIRE GRADIENT */
+.gradient-blue {
+  background: linear-gradient(135deg, #00f0ff 0%, #0070f3 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block;
+  text-shadow: 0 0 35px rgba(0, 210, 255, 0.5) !important;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00d2ff 0%, #0066ff 100%) !important;
+  box-shadow: 0 4px 25px rgba(0, 150, 255, 0.55) !important;
+}
+.btn-primary:hover {
+  box-shadow: 0 6px 35px rgba(0, 230, 255, 0.75) !important;
+}
+
+</style>
+</head>
+<body>
+<!-- NAVBAR -->
+<header>
+  <div class="container nav-inner">
+    <div class="brand-logo">
+      <span class="brand-name font-serif">WASH AURA</span>
+      <span class="brand-sub">PREMIUM DOORSTEP CAR CARE • RAIPUR</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#home">HOME</a>
+      <a href="#services">SERVICES</a>
+      <a href="#addons">ADD-ONS</a>
+      <a href="#paint">PAINT CARE</a>
+      <a href="#transformation">BEFORE & AFTER</a>
+      <a href="#work">OUR WORK</a>
+      <a href="#reviews">REVIEWS</a>
+      <a href="tel:+918770814008">CONTACT</a>
+    </nav>
+    <a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20doorstep%20car%20care%20service." target="_blank" class="btn-nav">
+      BOOK NOW →
+    </a>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <img src="hero-image.webp" alt="Wash Aura Premium Doorstep Car Care Raipur" class="hero-bg" width="800" height="450" fetchpriority="high">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="kicker">PREMIUM DOORSTEP CAR CARE • RAIPUR</div>
+    <h1 class="font-serif">
+      YOUR CAR DESERVES<br>
+      <span class="gradient-blue">MORE THAN A WASH.</span>
+    </h1>
+    <p class="hero-sub">
+      Premium exterior and interior car deep cleaning delivered directly to your doorstep across Raipur. Professional care, careful finishing and surface protection that goes beyond ordinary washing.
+    </p>
+    <div class="hero-actions">
+      <a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20doorstep%20car%20care%20service." target="_blank" class="btn-primary shimmer-btn">
+        BOOK ON WHATSAPP →
+      </a>
+      <a href="https://share.google/JQfHmCFxZoJJUfrGR" target="_blank" class="btn-ghost">
+        ★ 5.0 GOOGLE REVIEWS (9+)
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING LUXURY TRUST STRIP (REAL NUMBERS) -->
+<div class="container trust-strip">
+  <div class="trust-card">
+    <div class="trust-item">
+      <div class="trust-icon">🛡️</div>
+      <div class="trust-info">
+        <strong>Doorstep Convenience</strong>
+        <small>At your home in Raipur</small>
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">👨‍🔧</div>
+      <div class="trust-info">
+        <strong>Professional Care</strong>
+        <small>Trained & courteous team</small>
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">💎</div>
+      <div class="trust-info">
+        <strong>pH-Neutral Products</strong>
+        <small>Safe for vehicle paint</small>
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">⭐</div>
+      <div class="trust-info">
+        <strong>5.0 Google Rating</strong>
+        <small>100% 5-Star Reviews</small>
+      </div>
+    </div>
+    <div class="trust-item trust-highlight">
+      <div class="trust-info">
+        <strong>100+</strong>
+        <small style="color:var(--gold-light);">Cars Cared For in Raipur</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES / DEEP CLEANING PACKAGES -->
+<section id="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="kicker" style="justify-content:center;">PACKAGES & PRICING</div>
+      <h2 class="font-serif">COMPLETE <span class="gradient-blue">DEEP CLEANING</span></h2>
+      <p>Professional interior and exterior deep cleaning delivered right at your doorstep. Transparent packages tailored for all car sizes in Raipur.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- 01 COMPLETE DEEP CLEANING -->
+      <div class="service-card">
+        <img src="deep-cleaning.webp" alt="Complete Deep Cleaning Wash Aura" class="service-img" loading="lazy">
+        <div class="service-body">
+          <span class="watermark-num">01</span>
+          <div class="service-price">₹2,299 – ₹3,499 <span>/ Package</span></div>
+          <h3 class="service-title">Complete Deep Cleaning</h3>
+          <p class="service-desc">Our most popular all-in-one comprehensive doorstep care package for complete inside-out transformation.</p>
+          <ul class="service-features">
+            <li>Full Exterior Snow Foam Wash</li>
+            <li>Alloy Wheels & Wheel Arch Cleaning</li>
+            <li>Complete Interior Vacuum & Scrub</li>
+            <li>Dashboard, Console & Door UV Guard</li>
+            <li>Glass & Windshield Spot Treatment</li>
+            <li>Tyre Dressing & Gloss Finish</li>
+          </ul>
+          <a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20Complete%20Deep%20Cleaning." target="_blank" class="service-btn">
+            BOOK THIS PACKAGE →
+          </a>
+        </div>
+      </div>
+
+      <!-- 02 INTERIOR DEEP CLEANING -->
+      <div class="service-card">
+        <img src="real-work.webp" alt="Interior Deep Cleaning Wash Aura" class="service-img" loading="lazy">
+        <div class="service-body">
+          <span class="watermark-num">02</span>
+          <div class="service-price">₹1,499 – ₹1,999 <span>/ Package</span></div>
+          <h3 class="service-title">Interior Deep Cleaning</h3>
+          <p class="service-desc">Focused interior restoration, sanitization, and deep stain removal for a fresh showroom feel.</p>
+          <ul class="service-features">
+            <li>High-Power Cabin & Boot Vacuuming</li>
+            <li>Fabric & Leather Seat Deep Cleaning</li>
+            <li>Roof Liner & Carpet Spot Cleaning</li>
+            <li>AC Vent Sanitization & Odor Treatment</li>
+            <li>Plastics & Trims UV Dressing</li>
+          </ul>
+          <a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20Interior%20Deep%20Cleaning." target="_blank" class="service-btn">
+            BOOK THIS PACKAGE →
+          </a>
+        </div>
+      </div>
+
+      <!-- 03 EXTERIOR DEEP CLEANING -->
+      <div class="service-card">
+        <img src="premium-finish.webp" alt="Exterior Deep Cleaning Wash Aura" class="service-img" loading="lazy">
+        <div class="service-body">
+          <span class="watermark-num">03</span>
+          <div class="service-price">₹1,299 – ₹1,699 <span>/ Package</span></div>
+          <h3 class="service-title">Exterior Deep Cleaning</h3>
+          <p class="service-desc">Safe multi-stage washing with pH-neutral shampoo, bug removal, and high-gloss paint protection.</p>
+          <ul class="service-features">
+            <li>Pre-Wash & High-Pressure Snow Foam</li>
+            <li>Two-Bucket Scratch-Safe Hand Wash</li>
+            <li>Wheel Deep Cleaning & Iron Decon</li>
+            <li>Streak-Free Window & Mirror Wipe</li>
+            <li>Spray Gloss Paint Sealant Application</li>
+          </ul>
+          <a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20Exterior%20Deep%20Cleaning." target="_blank" class="service-btn">
+            BOOK THIS PACKAGE →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE BEFORE & AFTER SLIDER -->
+<section id="transformation" class="section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="kicker" style="justify-content:center;">OUR WORK</div>
+      <h2 class="font-serif">BEFORE & <span class="gradient-blue">AFTER</span></h2>
+      <p>Real results. Real transformations. Slide across to see the difference Wash Aura doorstep car care makes.</p>
+    </div>
+
+    <div class="before-after-wrap">
+      <div class="ba-container" id="baBox">
+        <img src="hero-image.webp" alt="Before Car Care" class="ba-img ba-before">
+        <span class="ba-badge badge-before">BEFORE (Dull & Dusty)</span>
+
+        <img src="hero-image.webp" alt="After Wash Aura Care" class="ba-img ba-after" id="baAfter">
+        <span class="ba-badge badge-after">AFTER (Wash Aura Gloss)</span>
+
+        <div class="ba-slider-bar" id="baBar">
+          <div class="ba-handle">⟷</div>
+        </div>
+
+        <input type="range" min="0" max="100" value="50" class="ba-range" id="baRange" aria-label="Before after comparison slider">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADD-ON SERVICES -->
+<section id="addons">
+  <div class="container">
+    <div class="section-header">
+      <div class="kicker" style="justify-content:center;">ENHANCEMENTS</div>
+      <h2 class="font-serif">PREMIUM <span class="gradient-blue">ADD-ON</span> SERVICES</h2>
+      <p>Customize your car care service with our specialized doorstep treatment add-ons.</p>
+    </div>
+
+    <div class="addons-grid">
+      <div class="addon-card">
+        <div class="addon-icon">✨</div>
+        <div>
+          <strong>Spray Ceramic Protection</strong>
+          <small>Hydrophobic water beading & gloss</small>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">🛞</div>
+        <div>
+          <strong>Tyre & Trim Protection</strong>
+          <small>Deep satin finish & UV guard</small>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">🌿</div>
+        <div>
+          <strong>Odor Removal</strong>
+          <small>Cabin sanitization & fresh scent</small>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">🌧️</div>
+        <div>
+          <strong>Rain Repellent</strong>
+          <small>Front windshield water shedding</small>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">💧</div>
+        <div>
+          <strong>Glass Water Spot Removal</strong>
+          <small>Clear vision & mineral removal</small>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">🛡️</div>
+        <div>
+          <strong>Interior UV Protection</strong>
+          <small>Prevents dashboard fading & cracks</small>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">🛋️</div>
+        <div>
+          <strong>Leather Conditioning</strong>
+          <small>Restores soft feel & prevents aging</small>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">💺</div>
+        <div>
+          <strong>Fabric Seat Protection</strong>
+          <small>Repels accidental liquid spills</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANCED PAINT CARE (UPCOMING) -->
+<section id="paint" class="section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="kicker" style="justify-content:center;">ADVANCED SURFACE CARE</div>
+      <h2 class="font-serif">RESTORE. CORRECT. <span class="gradient-blue">PROTECT.</span></h2>
+      <p>Give your vehicle the deep gloss and surface protection it deserves with multi-stage machine polishing and paint care.</p>
+    </div>
+
+    <div class="paint-grid">
+      <!-- 01 ESSENTIAL -->
+      <div class="paint-card">
+        <span class="paint-badge">UPCOMING • STARTING AT ₹2,499</span>
+        <h3 style="font-size:20px; margin-bottom:8px;">01 | Essential Paint Care</h3>
+        <p style="font-size:13px; color:var(--text-muted); margin-bottom:18px;">A professional refresh for your vehicle's paintwork to eliminate minor oxidation and boost shine.</p>
+        <ul class="service-features" style="margin-bottom:20px;">
+          <li>Paint Decontamination & Clay Bar Treatment</li>
+          <li>Water-Spot Mineral Treatment</li>
+          <li>1-Step Machine Polish for Gloss</li>
+          <li>Premium Synthetic Paint Sealant</li>
+        </ul>
+        <a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20notify%20me%20about%20Essential%20Paint%20Care." target="_blank" class="service-btn">
+          NOTIFY ME →
+        </a>
+      </div>
+
+      <!-- 02 PREMIUM CORRECTION -->
+      <div class="paint-card" style="border-color:var(--border-blue);">
+        <span class="paint-badge" style="background:rgba(0,136,255,0.15); color:var(--blue-glow); border-color:var(--border-blue);">UPCOMING • STARTING AT ₹4,999</span>
+        <h3 style="font-size:20px; margin-bottom:8px;">02 | Premium Paint Correction</h3>
+        <p style="font-size:13px; color:var(--text-muted); margin-bottom:18px;">For vehicles with swirl marks, light scratches and dullness needing dual-action machine compounding.</p>
+        <ul class="service-features" style="margin-bottom:20px;">
+          <li>Full Paint Decontamination & Tar Removal</li>
+          <li>2-Step Machine Polishing & Swirl Correction</li>
+          <li>Light Scratch Reduction & Paint Refining</li>
+          <li>High-Gloss Surface Sealant Protection</li>
+        </ul>
+        <a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20notify%20me%20about%20Premium%20Paint%20Correction." target="_blank" class="service-btn" style="background:var(--blue-gradient); color:#fff; border:none;">
+          NOTIFY ME →
+        </a>
+      </div>
+
+      <!-- 03 ULTIMATE -->
+      <div class="paint-card">
+        <span class="paint-badge">INSPECTION BASED • CUSTOM QUOTE</span>
+        <h3 style="font-size:20px; margin-bottom:8px;">03 | Ultimate Paint Protection</h3>
+        <p style="font-size:13px; color:var(--text-muted); margin-bottom:18px;">Our most complete paint refinement treatment for high-end luxury machines.</p>
+        <ul class="service-features" style="margin-bottom:20px;">
+          <li>Multi-Stage Precision Paint Correction</li>
+          <li>Complete Deep Defect Leveling</li>
+          <li>Ultra-Reflective Mirror Finish</li>
+          <li>Hydrophobic Long-Term Surface Guard</li>
+        </ul>
+        <a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20an%20assessment%20for%20Ultimate%20Paint%20Protection." target="_blank" class="service-btn">
+          REQUEST ASSESSMENT →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / GALLERY & VIDEOS -->
+<section id="work">
+  <div class="container">
+    <div class="section-header">
+      <div class="kicker" style="justify-content:center;">OUR PORTFOLIO</div>
+      <h2 class="font-serif">DOORSTEP CARE <span class="gradient-blue">IN ACTION</span></h2>
+      <p>Real cars, real transformations, real customer satisfaction across Raipur.</p>
+    </div>
+
+    <!-- VIDEOS -->
+    <div class="videos-grid" style="margin-bottom:40px;">
+      <div class="video-card">
+        <video controls playsinline preload="none" poster="IMG_20260915_164505.jpg">
+          <source src="VID-20260807-WA0000.mp4" type="video/mp4">
+        </video>
+        <div class="video-info">
+          <strong>Doorstep Car Care</strong>
+          <small>Wash Aura • Raipur</small>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls playsinline preload="none" poster="IMG_20260915_174608.jpg">
+          <source src="VID-20260807-WA0001.mp4" type="video/mp4">
+        </video>
+        <div class="video-info">
+          <strong>Premium Car Showcase</strong>
+          <small>Real Work • Real Results</small>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls playsinline preload="none" poster="IMG_20260915_181048%20.jpg">
+          <source src="VID-20260807-WA0002.mp4" type="video/mp4">
+        </video>
+        <div class="video-info">
+          <strong>Car Care In Action</strong>
+          <small>Professional Care</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGES -->
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <img src="premium-finish.webp" alt="Exterior Car Care Raipur" loading="lazy">
+        <div class="gallery-caption">Premium Finish</div>
+      </div>
+      <div class="gallery-card">
+        <img src="real-work.webp" alt="Doorstep Car Care Raipur" loading="lazy">
+        <div class="gallery-caption">Real Work Result</div>
+      </div>
+      <div class="gallery-card">
+        <img src="detailing-result.webp" alt="Paint Surface Care" loading="lazy">
+        <div class="gallery-caption">Surface Care Result</div>
+      </div>
+      <div class="gallery-card">
+        <img src="exterior-finish.webp" alt="Exterior Finish Raipur" loading="lazy">
+        <div class="gallery-caption">Exterior Finish</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS (GENUINE GOOGLE REVIEWS) -->
+<section id="reviews" class="section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="kicker" style="justify-content:center;">TESTIMONIALS</div>
+      <h2 class="font-serif">TRUSTED BY <span class="gradient-blue">OUR CUSTOMERS</span></h2>
+      <p>Verified 5.0 Star Google Reviews from car owners across Raipur.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Busy schedule mein doorstep service best option hai. Wash Aura ne impress kar diya. Har chhoti detail par dhyan diya gaya. Wheels aur glass bhi perfectly clean the."</p>
+        <div class="reviewer-info">
+          <strong>Roshni Nayak</strong>
+          <small>Google Review • Raipur</small>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Bahut achhi service thi. Staff bhi bahut friendly the. Raipur me doorstep service ke liye bahut achha hai."</p>
+        <div class="reviewer-info">
+          <strong>Subhan Mohammad</strong>
+          <small>Google Review • Raipur</small>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Satisfactory doorstep car care experience. Punctual, well-equipped and thorough work done on my car."</p>
+        <div class="reviewer-info">
+          <strong>Lakshya Sahu</strong>
+          <small>Google Review • Raipur</small>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:32px;">
+      <a href="https://share.google/JQfHmCFxZoJJUfrGR" target="_blank" class="btn-ghost" style="border-color:var(--border-gold); color:var(--gold-light);">
+        ★ READ ALL GOOGLE REVIEWS (5.0 RATED) ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION / DOORSTEP COVERAGE IN RAIPUR -->
+<section id="location">
+  <div class="container">
+    <div class="location-box">
+      <div class="kicker" style="justify-content:center;">CONVENIENT SERVICE</div>
+      <h2 class="font-serif" style="font-size:32px; margin-bottom:12px;">CAR CARE AT YOUR DOORSTEP.</h2>
+      <p style="color:var(--text-muted); font-size:14px; max-width:600px; margin:0 auto;">
+        No need to drive to a workshop or wait in queues. We bring professional equipment, electricity-safe setup and premium products directly to your parking.
+      </p>
+
+      <div class="location-tags">
+        <span class="location-tag">📍 Shankar Nagar</span>
+        <span class="location-tag">📍 New Shanti Nagar</span>
+        <span class="location-tag">📍 VIP Road</span>
+        <span class="location-tag">📍 Civil Lines</span>
+        <span class="location-tag">📍 Devendra Nagar</span>
+        <span class="location-tag">📍 Pandri</span>
+        <span class="location-tag">📍 Telibandha</span>
+        <span class="location-tag">📍 Tatibandh</span>
+        <span class="location-tag">📍 Across Raipur</span>
+      </div>
+
+      <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:20px;">
+        <a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20check%20service%20availability%20at%20my%20location." target="_blank" class="btn-primary shimmer-btn">
+          BOOK ON WHATSAPP (+91 87708 14008) →
+        </a>
+        <a href="https://wa.me/916265919245?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20doorstep%20car%20care%20service." target="_blank" class="btn-ghost" style="border-color:rgba(56,189,248,0.4); color:var(--blue-glow);">
+          💬 ALT WHATSAPP (+91 62659 19245)
+        </a>
+        <a href="tel:+918770814008" class="btn-ghost">
+          📞 CALL +91 87708 14008
+        </a>
+        <a href="mailto:washaura144@gmail.com" class="btn-ghost">
+          ✉️ washaura144@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <span class="brand-name font-serif" style="font-size:22px;">WASH AURA</span>
+        <p style="margin:12px 0; color:#94a3b8; font-size:13px; max-width:320px;">
+          Wash Aura — Premium Doorstep Car Care. Complete deep cleaning, surface protection and vehicle care in Raipur, Chhattisgarh.
+        </p>
+        <p style="color:var(--gold-light); font-weight:700; margin-bottom:4px;"><a href="tel:+918770814008">📞 Call: +91 87708 14008</a></p>
+        <p style="color:#25d366; font-weight:700; margin-bottom:4px;"><a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20doorstep%20car%20care%20service." target="_blank">💬 WhatsApp: +91 62659 19245</a></p>
+        <p style="color:var(--blue-glow); font-weight:600; margin-bottom:4px;"><a href="mailto:washaura144@gmail.com">✉️ washaura144@gmail.com</a></p>
+        <p style="color:var(--text-dim); font-size:12px; margin-top:6px;">📍 New Shanti Nagar, Shankar Nagar, Raipur (492004)</p>
+      </div>
+      <div>
+        <strong style="color:#fff; display:block; margin-bottom:14px;">Quick Links</strong>
+        <p style="margin-bottom:8px;"><a href="#services">Deep Cleaning Packages</a></p>
+        <p style="margin-bottom:8px;"><a href="#addons">Add-On Services</a></p>
+        <p style="margin-bottom:8px;"><a href="#paint">Paint Care</a></p>
+        <p style="margin-bottom:8px;"><a href="#transformation">Before & After</a></p>
+        <p style="margin-bottom:8px;"><a href="#reviews">Customer Reviews</a></p>
+      </div>
+      <div>
+        <strong style="color:#fff; display:block; margin-bottom:14px;">Doorstep In Raipur</strong>
+        <p style="margin-bottom:6px;">Shankar Nagar & VIP Road</p>
+        <p style="margin-bottom:6px;">Civil Lines & Devendra Nagar</p>
+        <p style="margin-bottom:6px;">Pandri, Tatibandh & Telibandha</p>
+        <p style="margin-bottom:6px;">At Your Home or Office</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Wash Aura — Premium Doorstep Car Care, Raipur, Chhattisgarh. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20car%20care%20service." target="_blank" class="fab-whatsapp" aria-label="Book on WhatsApp">
+  💬
+</a>
+
+<script>
+// Before & After Interactive Slider
+const baRange = document.getElementById('baRange');
+const baAfter = document.getElementById('baAfter');
+const baBar = document.getElementById('baBar');
+
+if (baRange && baAfter && baBar) {
+  baRange.addEventListener('input', function(e) {
+    const val = e.target.value;
+    baAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
+    baBar.style.left = `${val}%`;
+  });
+}
+
+// Lightweight Scroll Reveal
+if ('IntersectionObserver' in window) {
+  const revealElements = document.querySelectorAll('.service-card, .gallery-card, .review-card, .addon-card, .paint-card, .before-after-wrap, .video-card');
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  revealElements.forEach(el => {
+    el.classList.add('reveal');
+    revealObserver.observe(el);
+  });
+}
+
+</script>
+
+
+<!-- MOBILE STICKY CONVERSION BAR -->
+<div class=mobile-sticky-bar>
+  <div class=sticky-bar-text>
+    <span class=sticky-bar-title>WASH AURA • RAIPUR</span>
+    <span class=sticky-bar-sub>Doorstep Care Starts ₹1,299</span>
+  </div>
+  <a href=https://wa.me/918770814008?text=Hi%20Wash%20Aura%2C%20I%20want%20to%20book%20a%20doorstep%20car%20care%20service. target=_blank class=sticky-bar-btn>
+    BOOK NOW 💬
+  </a>
+</div>
+
+</body>
+</html>
